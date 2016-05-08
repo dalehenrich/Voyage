@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-GemStone-Magritte-Serialization",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOGemStoneSerializer",
+	"pools" : [
+		 ],
+	"super" : "VOMongoSerializer",
+	"type" : "normal" }

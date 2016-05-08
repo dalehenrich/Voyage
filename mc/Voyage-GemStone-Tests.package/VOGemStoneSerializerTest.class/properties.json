@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-GemStone-Tests-Serialization",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOGemStoneSerializerTest",
+	"pools" : [
+		 ],
+	"super" : "VOMongoSerializerTest",
+	"type" : "normal" }

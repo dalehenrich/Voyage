@@ -1,0 +1,1 @@
+(name 'Voyage-GemStone-Magritte-dkh.1' message 'add GemStone Magritte serializer and materializer; add GemStone packages to baseline; add GemStone resolver and session pool' id '6c58039e-0dd4-4673-8dbf-c4ffb7551dc2' date '8 May 2016' time '3:14:36.121121 pm' author 'dkh' ancestors () stepChildren ())

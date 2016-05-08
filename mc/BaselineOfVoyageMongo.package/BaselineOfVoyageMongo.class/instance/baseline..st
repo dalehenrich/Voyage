@@ -12,7 +12,11 @@ baseline: spec
 			package: 'Voyage-Seaside-Container' with: [ spec requires: 'Voyage-Model-Core' ];
 			package: 'Voyage-Mongo-Core' with: [ spec requires: #('MongoTalk' 'Voyage-Model-Core') ];
 			package: 'Voyage-Mongo-Magritte' with: [ spec requires: #('Magritte3' 'Voyage-Mongo-Core') ];
+			package: 'Voyage-GemStone-Core' with: [ spec requires: #('TugrikTalk' 'Voyage-Model-Core') ];
+			package: 'Voyage-GemStone-Magritte' with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Mongo-Magritte') ];
+
 			package: 'Voyage-Mongo-Tests';
+			package: 'Voyage-GemStone-Tests' with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Mongo-Tests') ];
 			package: 'Voyage-Mongo-Utils' with: [ spec requires: #('Voyage-Mongo-Core') ].
 			
 		spec
