@@ -1,4 +1,4 @@
 reseting
 resetDescriptionOf: aClass 
-	VOMongoRepository allSubInstances 
+	VOGemStoneRepository allSubInstances 
 		do: [ :each |	 each resetDescriptionForClass: aClass ]
