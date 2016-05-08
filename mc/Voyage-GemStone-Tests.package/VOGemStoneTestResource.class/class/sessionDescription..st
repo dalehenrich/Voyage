@@ -1,0 +1,3 @@
+gemstone
+sessionDescription: aSessionDescription
+	SessionDescription := aSessionDescription
