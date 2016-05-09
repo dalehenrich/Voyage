@@ -32,6 +32,20 @@ baseline: spec
 
 			package: 'Voyage-GemStone-Tests' with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Mongo-Tests') ];
 
-			group: 'gemstone' with: #('Voyage-GemStone-Core' 'Voyage-GemStone-Magritte');
-			group: 'gemstone tests' with: #('Voyage-GemStone-Tests');
+			group: 'gemstone' with: #('core' 'mongo' 'Voyage-GemStone-Core' 'Voyage-GemStone-Magritte');
+			group: 'gemstone tests' with: #('Voyage-GemStone-Tests' 'tests');
+         yourself ].
+
+	spec for: #'gs3.3.x' do: [
+
+		spec
+			baseline: 'TugrikTalk'
+			with: [ spec
+				loads: #('CI');
+				repository: 'github://dalehenrich/Tugrik:master/repository' ].
+
+		spec
+			group: 'gemstone' with: #('gemstone tests');
+			group: 'gemstone tests' with: #('Tugrik');
          yourself ]
+
