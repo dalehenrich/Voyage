@@ -4,8 +4,8 @@ SmalltalkCISpec {
       #baseline : 'VoyageMongo',
       #directory : 'mc',
       #loads : [ 'gemstone', 'gemstone tests' ],
-      #platforms : [ #pharo ]
-    }
+      #platforms : [ #pharo , #gemstone ]
+    } 
   ]
 }
 
