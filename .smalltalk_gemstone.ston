@@ -6,6 +6,11 @@ SmalltalkCISpec {
       #load : [ 'gemstone', 'gemstone tests' ],
       #platforms : [ #pharo , #gemstone ]
     } 
-  ]
+  ],
+  #testing : {
+    #include: {
+      #projects : [ 'TugrikTalk' ]
+    }
+  }
 }
 
