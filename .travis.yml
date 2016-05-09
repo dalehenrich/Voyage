@@ -5,11 +5,14 @@ smalltalk_config: .smalltalk_gemstone.ston
 os:
   - linux
 #  - osx
-#services: 
-#  - mongodb
+services: 
+  - mongodb
 smalltalk:
    - GemStone-3.3.0
 #  - Pharo-5.0
 #  - Pharo-4.0
 #  - Pharo-3.0
 env: GSCI_CLIENTS="Pharo-5.0"
+cache:
+  directories:
+    - $SMALLTALK_CI_CACHE
