@@ -14,4 +14,5 @@ smalltalk:
 matrix:
   include:
     - smalltalk_config: .smalltalk_gemstone.ston
-      smalltalk: Pharo-5.0
+      smalltalk: GemStone-3.3.0
+      env: GSCI_CLIENTS="Pharo-5.0"
