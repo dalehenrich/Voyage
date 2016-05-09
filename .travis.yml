@@ -6,16 +6,21 @@ sudo: false
 #  - osx
 services: 
   - mongodb
-smalltalk:
-  - Pharo-5.0
-  - Pharo-4.0
-  - Pharo-3.0
+#smalltalk:
+#  - Pharo-5.0
+#  - Pharo-4.0
+#  - Pharo-3.0
 
-matrix:
-  include:
-    - smalltalk_config: .smalltalk_gemstone.ston
-      smalltalk: GemStone-3.3.0
-      env: GSCI_CLIENTS="Pharo-5.0"
+#matrix:
+#  include:
+#    - smalltalk_config: .smalltalk_gemstone.ston
+#      smalltalk: GemStone-3.3.0
+#      env: GSCI_CLIENTS="Pharo-5.0"
+
+# use the following workaround for https://github.com/hpi-swa/smalltalkCI/issues/139
+smalltalk_config: .smalltalk.ston
+smalltalk: GemStone-3.3.0
+env: GSCI_CLIENTS="Pharo-5.0"
 
 cache:
   directories:

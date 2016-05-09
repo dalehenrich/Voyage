@@ -3,8 +3,14 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'VoyageMongo',
       #directory : 'mc',
-      #platforms : [ #pharo ]
+      #load : [ 'gemstone', 'gemstone tests' ],
+      #platforms : [ #pharo , #gemstone ]
+    } 
+  ],
+  #testing : {
+    #include: {
+      #projects : [ 'TugrikTalk' ]
     }
-  ]
+  }
 }
 
