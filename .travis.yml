@@ -5,8 +5,8 @@ smalltalk_config: .smalltalk_gemstone.ston
 os:
   - linux
 #  - osx
-services: 
-  - mongodb
+#services: 
+#  - mongodb
 smalltalk:
    - GemStone-3.3.0
 #  - Pharo-5.0
