@@ -1,22 +1,22 @@
 language: smalltalk
 sudo: false
 
-smalltalk_config: .smalltalk_gemstone.ston
-os:
-  - linux
+#os:       #comment out both oses at once - workaround for https://github.com/hpi-swa/smalltalkCI/issues/138
+# - linux
 #  - osx
 services: 
   - mongodb
 smalltalk:
-   - GemStone-3.3.0
-#  - Pharo-5.0
-#  - Pharo-4.0
-#  - Pharo-3.0
-env: GSCI_CLIENTS="Pharo-5.0"
-#matrix:
-#  include:
-#    - smalltalk: Pharo-5.0
-#      smalltalk_config: .smalltalk.ston
+  - Pharo-5.0
+  - Pharo-4.0
+  - Pharo-3.0
+
+matrix:
+  include:
+    - smalltalk_config: .smalltalk_gemstone.ston
+      smalltalk: GemStone-3.3.0
+      env: GSCI_CLIENTS="Pharo-5.0"
+
 cache:
   directories:
     - $SMALLTALK_CI_CACHE
