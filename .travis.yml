@@ -11,3 +11,7 @@ smalltalk:
   - Pharo-4.0
   - Pharo-3.0
 
+matrix:
+  include:
+    - smalltalk_config: .smalltalk_gemstone.ston
+      smalltalk: Pharo-5.0
