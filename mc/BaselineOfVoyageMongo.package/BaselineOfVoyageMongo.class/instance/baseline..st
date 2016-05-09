@@ -38,14 +38,10 @@ baseline: spec
 
 	spec for: #'gs3.3.x' do: [
 
-		spec
-			baseline: 'TugrikTalk'
-			with: [ spec
-				loads: #('CI');
-				repository: 'github://dalehenrich/Tugrik:master/repository' ].
+		self tugrikTalk: spec.
 
 		spec
 			group: 'gemstone' with: #('gemstone tests');
-			group: 'gemstone tests' with: #('Tugrik');
+			group: 'gemstone tests' with: #('TugrikTalk');
          yourself ]
 

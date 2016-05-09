@@ -3,5 +3,5 @@ tugrikTalk: spec
 	spec
 		baseline: 'TugrikTalk'
 		with: [ spec
-				loads: 'Core';
+				loads: 'CI';
 				repository: 'github://dalehenrich/Tugrik:master/repository' ]
