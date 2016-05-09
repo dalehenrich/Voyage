@@ -1,19 +1,15 @@
 language: smalltalk
 sudo: false
 
+smalltalk_config: .smalltalk_gemstone.ston
 os:
   - linux
 #  - osx
-services: 
-  - mongodb
+#services: 
+#  - mongodb
 smalltalk:
-  - Pharo-5.0
-  - Pharo-4.0
-  - Pharo-3.0
-
-matrix:
-  include:
-    - smalltalk_config: .smalltalk_gemstone.ston
-      smalltalk: GemStone-3.3.0
-      env: GSCI_CLIENTS="Pharo-5.0"
-      sudo: false
+   - GemStone-3.3.0
+#  - Pharo-5.0
+#  - Pharo-4.0
+#  - Pharo-3.0
+env: GSCI_CLIENTS="Pharo-5.0"
