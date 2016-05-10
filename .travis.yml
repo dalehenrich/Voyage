@@ -1,7 +1,7 @@
 language: smalltalk
 sudo: false
 
-#os:       #comment out both oses at once - workaround for https://github.com/hpi-swa/smalltalkCI/issues/138
+#os:       #comment out both oses at once - workaround for https://github.com/travis-ci/travis-ci/issues/6028 (see https://github.com/hpi-swa/smalltalkCI/issues/138 for discussion of alternate workarounds)
 # - linux
 #  - osx
 services: 
