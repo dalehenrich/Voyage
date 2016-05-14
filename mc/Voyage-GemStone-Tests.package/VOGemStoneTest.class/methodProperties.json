@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"lastStoredRun" : "dkh 5/14/2016 11:14",
+		"lastStoredRun" : "dkh 5/14/2016 11:21",
 		"resources" : "dkh 5/7/2016 17:24" },
 	"instance" : {
+		"expectedFailures" : "dkh 5/14/2016 11:18",
 		"repository" : "dkh 5/8/2016 10:37",
 		"tearDown" : "dkh 5/14/2016 10:54",
 		"testRemoveAll" : "dkh 5/14/2016 11:11" } }
