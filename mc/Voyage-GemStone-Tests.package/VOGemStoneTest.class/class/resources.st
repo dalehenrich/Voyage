@@ -1,3 +1,3 @@
 accessing
 resources
-	^{ VOMongoTestResource }
+	^{ VOGemStoneTestResource }
