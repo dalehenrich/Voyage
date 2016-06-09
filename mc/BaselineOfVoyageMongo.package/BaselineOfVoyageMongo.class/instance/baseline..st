@@ -24,10 +24,13 @@ baseline: spec
 			group: 'tests' with: #('Voyage-Mongo-Tests') ].
 
 	spec for: #'pharo5.x' do: [
-		self tugrikTalk: spec.
-		
 		spec
-			package: 'Voyage-GemStone-Core' with: [ spec requires: #('TugrikTalk' 'Voyage-Model-Core') ];
+			baseline: 'Tugrik'
+			with: [ spec
+				loads: 'CI';
+				repository: 'github://dalehenrich/Tugrik:master/repository' ].		
+		spec
+			package: 'Voyage-GemStone-Core' with: [ spec requires: #('Tugrik' 'Voyage-Model-Core') ];
 			package: 'Voyage-GemStone-Magritte' with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Mongo-Magritte') ];
 
 			package: 'Voyage-GemStone-Tests' with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Mongo-Tests') ];
@@ -36,12 +39,4 @@ baseline: spec
 			group: 'gemstone tests' with: #('Voyage-GemStone-Tests' 'tests');
          yourself ].
 
-	spec for: #'gs3.3.x' do: [
-
-		self tugrikTalk: spec.
-
-		spec
-			group: 'gemstone' with: #('gemstone tests');
-			group: 'gemstone tests' with: #('TugrikTalk');
-         yourself ]
 

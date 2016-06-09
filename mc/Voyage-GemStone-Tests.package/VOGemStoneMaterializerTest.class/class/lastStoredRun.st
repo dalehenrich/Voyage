@@ -1,0 +1,3 @@
+history
+lastStoredRun
+	^ ((Dictionary new) add: (#timeStamp->(DateAndTime basicNew instVarAt: 1 put: 84521; instVarAt: 2 put: (Duration seconds: -25200 nanoSeconds: 0); instVarAt: 3 put: 2457549; instVarAt: 4 put: 345866000; yourself)); add: (#passed->((Set new) add: #testBasicMaterialization; add: #testEmbededBasicCollectionMaterialization; add: #testEmbededBasicDictionaryMaterialization; add: #testEmbededMaterialization; yourself)); add: (#failures->((Set new))); add: (#errors->((Set new))); yourself)

@@ -23,6 +23,46 @@ Documentation
 ### Pharo for the enterprise book
 Voyage is part of the upcoming "Pharo for the Enterprise 2" book, and Johan Fabry (along with Damien Cassou) has written a nice chapter on it: [HTML](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/ws/book-result/Voyage/Voyage.html) / [PDF](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/ws/book-result/Voyage/Voyage.pdf)
 
+Voyage GemStone installation
+---
+
+### Install GsDevKit_home
+
+The following are based on the [GsDevKit_home installation instructions][6]:
+
+```
+# Install GsDevKit_home
+git clone https://github.com/GsDevKit/GsDevKit_home.git
+cd GsDevKit_home
+. bin/defHOME_PATH.env
+installServerClient
+
+# Create tODE client
+createClient tode
+```
+
+### Create Tugrik stone and Voyage client
+
+```
+# Clone MongoTalk
+cd $GS_HOME/shared/repos
+git clone https://github.com/pharo-nosql/mongotalk.git
+
+# Clone Voyage
+cd $GS_HOME/shared/repos
+git clone https://github.com/dalehenrich/voyage.git
+
+# Create Tugrik stone
+createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Voyage 3.3.0
+
+# Create Voyage Pharo5.0 client
+createClient -t pharo voyage_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk_gemstone.ston
+
+# Start interactive Voyage client
+startClient voyage_50 -s Voyage
+```
+
+
 ### Others
 - http://smallworks.eu/web/blog/2013-06-14-voyage-the-adventure
 - http://smallworks.eu/web/blog/2013-07-18-Voyage-advanced-queries
