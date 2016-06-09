@@ -34,7 +34,7 @@ The following are based on the [GsDevKit_home installation instructions][6]:
 # Install GsDevKit_home
 git clone https://github.com/GsDevKit/GsDevKit_home.git
 cd GsDevKit_home
-. bin/defHOME_PATH.env
+. bin/defHOME_PATH.env # define $GS_HOME in your shell ... needed when running GsDevKit_home shell commands
 installServerClient
 
 # Create tODE client
@@ -67,3 +67,6 @@ startClient voyage_50 -s Voyage
 - http://smallworks.eu/web/blog/2013-06-14-voyage-the-adventure
 - http://smallworks.eu/web/blog/2013-07-18-Voyage-advanced-queries
 - [Voyage by example, talk at ESUG 2014](http://smallworks.eu/web/blog/2014-08-21-VoyageByExample)
+
+[6]: https://github.com/GsDevKit/GsDevKit_home#installation
+
