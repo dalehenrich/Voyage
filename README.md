@@ -1,11 +1,23 @@
 Voyage [![Build Status](https://travis-ci.org/pharo-nosql/voyage.png)](http://travis-ci.org/pharo-nosql/voyage)
 ======
 
-
 Voyage is an object persistence abstraction layer for Pharo.
 
-Install
--------
+Voyage is a common layer for different backends but currently it supports just two: an in-memory layer and a backend for the MongoDB database (http://mongodb.org). 
+There is a third backend for [GemStone/S 64](https://gemtalksystems.com/products/gs64/) that is in the **proof of concept** stage.
+
+## Documentation
+
+### Pharo for the enterprise book
+Voyage is part of the upcoming "Pharo for the Enterprise 2" book, and Johan Fabry (along with Damien Cassou) has written a nice chapter on it: [HTML](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/ws/book-result/Voyage/Voyage.html) / [PDF](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/ws/book-result/Voyage/Voyage.pdf)
+
+### Others
+- http://smallworks.eu/web/blog/2013-06-14-voyage-the-adventure
+- http://smallworks.eu/web/blog/2013-07-18-Voyage-advanced-queries
+- [Voyage by example, talk at ESUG 2014](http://smallworks.eu/web/blog/2014-08-21-VoyageByExample)
+
+## MongoDB
+###Install
 
 Just install it from you Pharo catalog. 
 
@@ -18,15 +30,14 @@ Metacello new
 	load.
 ```
 
-Documentation
--------------
-### Pharo for the enterprise book
-Voyage is part of the upcoming "Pharo for the Enterprise 2" book, and Johan Fabry (along with Damien Cassou) has written a nice chapter on it: [HTML](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/ws/book-result/Voyage/Voyage.html) / [PDF](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/ws/book-result/Voyage/Voyage.pdf)
+## GemStone/S 64
+The GemStone/S 64 backend for Voyage is based upon [Tugrik](https://github.com/dalehenrich/Tugrik) a persistence layer for Pharo5.0 that is compatible with the [MongoTalk](https://github.com/pharo-nosql/mongotalk) Smalltalk API.
 
-Voyage GemStone installation
----
+### Proof of Concept
+At this stage, Tugrik is [passing all of the Mongo tests](https://travis-ci.org/dalehenrich/Tugrik#L1891) and VoyageGemStone is [passing all of the VoyageMongo tests](https://travis-ci.org/dalehenrich/voyage/jobs/136800410#L1989). 
+In total there are a little over 100 tests, so the work is far from complete, but it is encouraging to be at this stage.
 
-### Install GsDevKit_home
+#### Install GsDevKit_home
 
 The following are based on the [GsDevKit_home installation instructions][6]:
 
@@ -41,7 +52,7 @@ installServerClient
 createClient tode
 ```
 
-### Create Tugrik stone and Voyage client
+#### Create Tugrik stone and Voyage client
 
 ```
 # Clone MongoTalk
@@ -61,12 +72,6 @@ createClient -t pharo voyage_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.
 # Start interactive Voyage client
 startClient voyage_50 -s Voyage
 ```
-
-
-### Others
-- http://smallworks.eu/web/blog/2013-06-14-voyage-the-adventure
-- http://smallworks.eu/web/blog/2013-07-18-Voyage-advanced-queries
-- [Voyage by example, talk at ESUG 2014](http://smallworks.eu/web/blog/2014-08-21-VoyageByExample)
 
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
 
