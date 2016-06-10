@@ -16,6 +16,9 @@ matrix:
     - smalltalk_config: .smalltalk_gemstone.ston
       smalltalk: GemStone-3.3.0
       env: GSCI_CLIENTS="Pharo-5.0"
+  allow_failures:
+    - smalltalk: Pharo-4.0 # until https://github.com/pharo-nosql/voyage/issues/43 fixed
+    - smalltalk: Pharo-3.0 # until https://github.com/pharo-nosql/voyage/issues/43 fixed
 
 cache:
   directories:
