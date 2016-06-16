@@ -11,5 +11,11 @@ SmalltalkCISpec {
     #include: {
       #projects : [ 'Tugrik' ]
     }
-  }
+  },
+  #configuring : [
+    SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'Tugrik',
+     #platforms : [ #gemstoneClient ] 
+    }
+  ]
 }
