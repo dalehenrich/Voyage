@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-GemStone-Help",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VoyageGemStoneInstallationHelp",
+	"pools" : [
+		 ],
+	"super" : "VoyageGemStoneHelp",
+	"type" : "normal" }

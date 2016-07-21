@@ -30,10 +30,12 @@ baseline: spec
 					with: [ spec requires: #('Tugrik' 'Voyage-Model-Core') ];
 				package: 'Voyage-GemStone-Magritte'
 					with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Mongo-Magritte') ];
+				package: 'Voyage-GemStone-Help'
+					with: [ spec requires: #('Voyage-GemStone-Core' ) ];
 				package: 'Voyage-GemStone-Tests'
 					with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Mongo-Tests') ];
 				group: 'gemstone'
-					with: #('core' 'mongo' 'Voyage-GemStone-Core' 'Voyage-GemStone-Magritte');
+					with: #('core' 'mongo' 'Voyage-GemStone-Core' 'Voyage-GemStone-Magritte' 'Voyage-GemStone-Help');
 				group: 'gemstone tests' with: #('Voyage-GemStone-Tests' 'tests');
 				yourself ].
 	spec
