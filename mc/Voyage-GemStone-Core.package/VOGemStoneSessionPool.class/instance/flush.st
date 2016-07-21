@@ -1,6 +1,4 @@
 private
 flush
-	| session |
-	[ session := sessions nextOrNil.
-	session notNil ] whileTrue: [ activeSessions add: session ].
-	activeSessions copy do: [ :aSession | self returnToPool: aSession ]
+	activeSessions copy do: [ :aSession | self returnToPool: aSession ].
+	super flush
