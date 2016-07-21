@@ -6,8 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"activeSessions",
 		"sessionDescription",
-		"database" ],
+		"database",
+		"populating" ],
 	"name" : "VOGemStoneSessionPool",
 	"pools" : [
 		 ],
