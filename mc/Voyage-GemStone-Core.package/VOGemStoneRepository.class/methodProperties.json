@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"database:" : "dkh 5/8/2016 09:39",
-		"defaultPoolSize" : "dkh 5/7/2016 17:25",
+		"defaultPoolSize" : "TravisCI 7/21/2016 09:59",
 		"initialize" : "dkh 5/7/2016 17:25",
 		"registerToNotifications" : "dkh 5/7/2016 17:25",
 		"resetDescriptionCacheFromMethod:" : "dkh 5/7/2016 17:25",
