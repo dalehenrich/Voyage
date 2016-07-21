@@ -56,7 +56,7 @@ createClient tode
 
 ```
 # Create Voyage stone
-createStone -u http://gsdevkit.github.io/GsDevKit_home/VoyageMongo.ston -i Voyage -l voyage Voyage 3.3.1
+createStone -u http://gsdevkit.github.io/GsDevKit_home/VoyageMongo.ston -i VoyageMongo -l VoyageMongo Voyage 3.3.1
 
 # Create Voyage Pharo5.0 client
 createClient -t pharo voyage -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk_gemstone.ston
