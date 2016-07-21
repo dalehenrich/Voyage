@@ -52,7 +52,7 @@ installServerClient
 createClient tode
 ```
 
-#### Create Tugrik stone and Voyage client
+#### Create Voyage stone and Voyage client
 
 ```
 # Create Voyage stone

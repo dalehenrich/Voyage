@@ -6,11 +6,11 @@ sessionDescriptions
 'When a stone is created using the `createStone` command, GsDevKit_home creates a session description object in a file named `$GS_HOME/sys/local/sessions/<stone-name>`. The session description object is written in STON format[1] and looks like the following:
 
 	TDSessionDescription {
-		#name : ''Tugrik'',
+		#name : ''Voyage'',
 		#stoneHost : ''foos'',
-		#stoneName : ''Tugrik'',
+		#stoneName : ''Voyage'',
 		#gemHost : ''foos'',
-		#netLDI : ''Tugrik_ldi'',
+		#netLDI : ''Voyage_ldi'',
 		#netLDIPort : '''',
 		#gemTask : ''gemnetobject'',
 		#userId : ''DataCurator'',
@@ -18,8 +18,8 @@ sessionDescriptions
 		#osUserId : nil,
 		#osPassword : nil,
 		#dataDirectory : nil,
-		#backupDirectory : ''/export/foos1/users/dhenrich/dev/_home/server/stones/Tugrik/backups/'',
-		#snapshotDirectory : ''/export/foos1/users/dhenrich/dev/_home/server/stones/Tugrik/snapshots/'',
+		#backupDirectory : ''/export/foos1/users/dhenrich/dev/_home/server/stones/Voyage/backups/'',
+		#snapshotDirectory : ''/export/foos1/users/dhenrich/dev/_home/server/stones/Voyage/snapshots/'',
 		#gemstoneVersion : ''3.3.0'',
 		#gciLibraryName : nil,
 		#adornmentColor : nil,
@@ -36,7 +36,7 @@ The session description instance is loaded from disk using the following express
 
 When starting a GsDevKit_home client, the `-s` option allows you to specify a default session description name:
 
-	startClient tugrik -s Tugrik
+	startClient voyage -s Voyage
 
 The default session description can then be created by using the following expression:
 

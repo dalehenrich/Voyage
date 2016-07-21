@@ -20,27 +20,9 @@ The following bash script installs GsDevKit_home and then clones the GitHub repo
 	installServerClient
 	
 	#--------
-	# Clone github projects to local disk
-	#--------
-	cd $GS_HOME/shared/repos
-	git clone https://github.com/GsDevKit/ston.git			  # STON (GsDevKit fork)
-	git clone https://github.com/hpi-swa/smalltalkCI.git	  # SmalltalkCI
-	git clone https://github.com/dalehenrich/mongotalk.git	# MongoTalk (my fork)
-	cd mongotalk
-	git checkout tugrik
-	cd ..
-	git clone https://github.com/dalehenrich/Tugrik.git		# Tugrik
-	git clone https://github.com/dalehenrich/voyage.git		# Voyage (my fork)
-	cd voyage
-	git checkout tugrik
-	cd ..
-	git clone https://github.com/GsDevKit/GemStone-GCI.git	# GemStone-GCI
-	cd $GS_HOME
-
-	#--------
 	# Create Voyage server
 	#--------
-	createStone -u http://gsdevkit.github.io/GsDevKit_home/Voyage.ston -i Voyage -l Voyage Voyage 3.3.1
+	createStone -u http://gsdevkit.github.io/GsDevKit_home/VoyageMongo.ston -i VoyageMongo -l VoyageMongo Voyage 3.3.1
 
 	#--------
 	# Create Clients
@@ -58,13 +40,13 @@ The following bash script installs GsDevKit_home and then clones the GitHub repo
 	cp $GS_HOME/shared/repos/Tugrik/gsdevkit/cloneUpdate $GS_HOME/sys/local/gsdevkit_bin
 
 	#--------
-	# Update shared project repositores, refresh clients and server
+	# Update shared project repositories, refresh clients and server
 	#--------
 	# Update shared project repositories and refresh clients
 	updateGsDevKit -gsc
 	
-	# refresh Tugrik stone
-	todeIt Tugrik project load Tugrik
+	# refresh Voyage stone
+	todeIt Voyage project load VoyageMongo
 
 **IMPORTANT NOTE** 
 Before running any of the bash scripts in this help document, you must have the $GS_HOME env var defined and $GS_HOME/bin should be in your path. The easiest way to do that is to include the following in your .bashrc file:
