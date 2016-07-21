@@ -55,22 +55,14 @@ createClient tode
 #### Create Tugrik stone and Voyage client
 
 ```
-# Clone MongoTalk
-cd $GS_HOME/shared/repos
-git clone https://github.com/pharo-nosql/mongotalk.git
-
-# Clone Voyage
-cd $GS_HOME/shared/repos
-git clone https://github.com/dalehenrich/voyage.git
-
-# Create Tugrik stone
-createStone -u http://gsdevkit.github.io/GsDevKit_home/Tugrik.ston -i Tugrik -l Tugrik Voyage 3.3.0
+# Create Voyage stone
+createStone -u http://gsdevkit.github.io/GsDevKit_home/Voyage.ston -i Voyage -l voyage Voyage 3.3.1
 
 # Create Voyage Pharo5.0 client
-createClient -t pharo voyage_50 -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk_gemstone.ston
+createClient -t pharo voyage -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk_gemstone.ston
 
 # Start interactive Voyage client
-startClient voyage_50 -s Voyage
+startClient voyage -s Voyage
 ```
 
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
