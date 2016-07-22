@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-GemStone-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 07/22/2016 12:01",
+	"instvars" : [
+		 ],
+	"name" : "VoyageExamplesDb",
+	"pools" : [
+		 ],
+	"super" : "TugrikDb",
+	"type" : "normal" }
