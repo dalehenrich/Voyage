@@ -1,0 +1,3 @@
+defaults
+defaultSessionDescription
+	^ GsDevKit_home sessionDescriptionNamed: SCIGemStoneServerConfigSpec defaultSessionName
