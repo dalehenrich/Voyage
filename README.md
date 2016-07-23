@@ -65,5 +65,12 @@ createClient -t pharo voyage -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.sma
 startClient voyage -s Voyage
 ```
 
+#### Voyage client image update doIt
+
+```smalltalk
+(FileLocator imageDirectory / 'customClientLoad.st') fileIn
+```
+
+
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
 
