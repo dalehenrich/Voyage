@@ -1,3 +1,3 @@
 system startup
 startUp
-	self reset
+	resolver flush

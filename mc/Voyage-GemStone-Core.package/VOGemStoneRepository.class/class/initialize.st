@@ -1,5 +1,3 @@
 class initialization
-initialize 
-	"I'm disabling this because it generates more problems than advantages"
-	"self registerToNotifications"
-	
+initialize
+	SessionManager default registerSystemClassNamed: self name

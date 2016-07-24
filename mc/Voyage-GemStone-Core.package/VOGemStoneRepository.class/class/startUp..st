@@ -1,4 +1,5 @@
 system startup
 startUp: resumming
-	resumming 
+	self current ifNil: [ ^ self ].
+	resumming
 		ifTrue: [ self current startUp ]
