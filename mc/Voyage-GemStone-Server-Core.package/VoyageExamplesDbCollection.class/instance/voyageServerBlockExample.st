@@ -2,6 +2,7 @@ private
 voyageServerBlockExample
   ^ '	"(VOGemStoneRepository database: ''my example'') enableSingleton".
 	"VORepository current"
+	"VORepository current dropDatabase"
 
 	[3+4] doOnServer.
 

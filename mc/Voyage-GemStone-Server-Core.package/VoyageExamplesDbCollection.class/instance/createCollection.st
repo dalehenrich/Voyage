@@ -10,4 +10,9 @@ createCollection
     at: #'name' put: 'Voyage Server Block';
     at: #'order' put: 5;
     at: #'contents' put: self voyageServerBlockExample;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Voyage Server Block Query';
+    at: #'order' put: 10;
+    at: #'contents' put: self voyageServerBlockQueryExample;
     yourself)} do: [ :dict | self doInsert: dict ]
