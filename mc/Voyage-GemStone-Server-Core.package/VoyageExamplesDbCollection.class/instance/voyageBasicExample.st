@@ -1,7 +1,7 @@
 private
 voyageBasicExample
   ^ '	"(VOGemStoneRepository database: ''my example'') enableSingleton".
-		"VORepository current"
+	"VORepository current"
 
 	pilot := VOTestPilot new
 		name: ''Janet'';
