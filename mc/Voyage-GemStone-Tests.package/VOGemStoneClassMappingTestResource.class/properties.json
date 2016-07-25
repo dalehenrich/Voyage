@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-GemStone-Tests-Resources",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOGemStoneClassMappingTestResource",
+	"pools" : [
+		 ],
+	"super" : "VOGemStoneTestResource",
+	"type" : "normal" }
