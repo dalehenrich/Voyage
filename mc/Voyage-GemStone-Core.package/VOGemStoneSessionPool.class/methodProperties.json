@@ -1,9 +1,12 @@
 {
 	"class" : {
 		"new" : "dkh 5/8/2016 11:28",
-		"sessionDescription:database:" : "dkh 5/8/2016 11:31" },
+		"sessionDescription:database:" : "dkh 5/8/2016 11:31",
+		"sessionDescription:dbServerClassName:database:" : "TravisCI 7/25/2016 14:09" },
 	"instance" : {
 		"database" : "dkh 5/8/2016 11:28",
+		"dbServerClassName" : "TravisCI 7/25/2016 14:08",
+		"dbServerClassName:" : "TravisCI 7/25/2016 14:08",
 		"ensureConnected:" : "TravisCI 7/20/2016 15:57",
 		"flush" : "TravisCI 7/21/2016 11:09",
 		"initialize" : "TravisCI 7/20/2016 15:59",
@@ -11,7 +14,7 @@
 		"isFull" : "TravisCI 7/20/2016 16:02",
 		"isPopulating" : "TravisCI 7/20/2016 16:00",
 		"mutex" : "TravisCI 7/20/2016 15:48",
-		"newSession" : "dkh 5/8/2016 11:42",
+		"newSession" : "TravisCI 7/25/2016 14:25",
 		"obtainSession" : "TravisCI 7/20/2016 15:58",
 		"populate" : "TravisCI 7/20/2016 16:00",
 		"repopulate" : "TravisCI 7/20/2016 16:02",

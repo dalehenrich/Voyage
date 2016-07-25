@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"dbServerClassName:repository:" : "TravisCI 7/25/2016 14:21",
 		"new" : "dkh 5/8/2016 11:14",
 		"repository:" : "dkh 5/8/2016 11:14",
 		"retries" : "dkh 5/8/2016 11:14" },
@@ -27,6 +28,8 @@
 		"count:" : "dkh 5/8/2016 11:14",
 		"count:where:" : "dkh 5/8/2016 11:14",
 		"databaseName" : "dkh 5/8/2016 11:14",
+		"dbServerClassName" : "TravisCI 7/25/2016 14:10",
+		"dbServerClassName:" : "TravisCI 7/25/2016 14:10",
 		"dropDatabase" : "dkh 5/8/2016 11:14",
 		"execute:" : "dkh 5/8/2016 11:14",
 		"execute:retries:" : "dkh 5/8/2016 12:24",
@@ -49,7 +52,7 @@
 		"remove:" : "dkh 5/8/2016 11:14",
 		"removeAll:" : "dkh 5/8/2016 11:14",
 		"removeCollection:" : "dkh 5/8/2016 11:14",
-		"reset" : "dkh 5/8/2016 11:30",
+		"reset" : "TravisCI 7/25/2016 14:15",
 		"retrieveClassOf:json:" : "dkh 5/8/2016 12:33",
 		"retrieveObjectOf:json:" : "dkh 5/8/2016 12:33",
 		"save:id:" : "dkh 5/8/2016 11:14",

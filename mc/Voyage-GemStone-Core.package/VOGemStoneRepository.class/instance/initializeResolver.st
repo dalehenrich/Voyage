@@ -1,3 +1,5 @@
 initialization
-initializeResolver 
-	resolver := VOGemStoneRepositoryResolver repository: self.
+initializeResolver
+	resolver := VOGemStoneRepositoryResolver
+		dbServerClassName: self dbServerClassName
+		repository: self

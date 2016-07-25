@@ -12,7 +12,8 @@
 		"resolver",
 		"forceEager",
 		"versionGenerator",
-		"sessionDescription" ],
+		"sessionDescription",
+		"dbServerClassName" ],
 	"name" : "VOGemStoneRepository",
 	"pools" : [
 		 ],

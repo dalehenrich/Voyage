@@ -1,6 +1,7 @@
 {
 	"class" : {
 		"database:" : "dkh 5/8/2016 09:39",
+		"dbServerClassName:database:" : "TravisCI 7/25/2016 14:14",
 		"defaultPoolSize" : "TravisCI 7/21/2016 09:59",
 		"defaultSessionDescription" : "TravisCI 7/22/2016 12:31",
 		"example" : "TravisCI 7/22/2016 12:56",
@@ -8,6 +9,7 @@
 		"resetDescriptionCacheFromMethod:" : "dkh 5/7/2016 17:25",
 		"resetDescriptionOf:" : "dkh 5/8/2016 09:44",
 		"sessionDescription:database:" : "dkh 5/8/2016 09:38",
+		"sessionDescription:dbServerClassName:database:" : "TravisCI 7/25/2016 14:00",
 		"shutDown:" : "dkh 7/24/2016 07:32",
 		"startUp:" : "dkh 7/24/2016 07:32" },
 	"instance" : {
@@ -17,6 +19,8 @@
 		"count:" : "dkh 5/7/2016 17:25",
 		"count:where:" : "dkh 5/7/2016 17:25",
 		"databaseName" : "dkh 5/7/2016 17:25",
+		"dbServerClassName" : "TravisCI 7/25/2016 14:12",
+		"dbServerClassName:" : "TravisCI 7/25/2016 14:12",
 		"descriptionBuilder" : "dkh 5/7/2016 17:25",
 		"dropDatabase" : "dkh 5/7/2016 17:25",
 		"flush" : "TravisCI 7/21/2016 11:01",
@@ -24,7 +28,7 @@
 		"idOf:" : "dkh 5/7/2016 17:25",
 		"initialize" : "dkh 5/7/2016 17:25",
 		"initializeCache" : "dkh 5/7/2016 17:25",
-		"initializeResolver" : "dkh 5/8/2016 11:48",
+		"initializeResolver" : "TravisCI 7/25/2016 14:21",
 		"initializeSessionDescription:database:" : "dkh 5/8/2016 10:06",
 		"isForceEager" : "dkh 5/7/2016 17:25",
 		"isNew:" : "dkh 5/7/2016 17:25",

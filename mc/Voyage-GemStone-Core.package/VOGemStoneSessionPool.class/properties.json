@@ -9,7 +9,8 @@
 		"activeSessions",
 		"sessionDescription",
 		"database",
-		"populating" ],
+		"populating",
+		"dbServerClassName" ],
 	"name" : "VOGemStoneSessionPool",
 	"pools" : [
 		 ],
