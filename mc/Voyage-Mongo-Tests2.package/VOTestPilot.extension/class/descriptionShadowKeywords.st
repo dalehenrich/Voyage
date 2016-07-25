@@ -1,4 +1,4 @@
-*Voyage-Mongo-Tests
+*Voyage-Mongo-Tests2
 descriptionShadowKeywords
 	<mongoDescription>
 	^VOMongoShadowDescription new

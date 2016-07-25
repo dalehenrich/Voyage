@@ -1,4 +1,4 @@
-*Voyage-Mongo-Tests
+*Voyage-Mongo-Tests2
 descriptionPastPets
 	<mongoDescription>
 	^VOMongoToManyDescription new

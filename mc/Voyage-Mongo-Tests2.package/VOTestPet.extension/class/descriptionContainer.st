@@ -1,4 +1,4 @@
-*Voyage-Mongo-Tests
+*Voyage-Mongo-Tests2
 descriptionContainer
 	<mongoContainer>
 	^VOMongoContainer new

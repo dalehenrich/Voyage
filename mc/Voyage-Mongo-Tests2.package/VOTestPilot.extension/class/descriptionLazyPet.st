@@ -1,4 +1,4 @@
-*Voyage-Mongo-Tests
+*Voyage-Mongo-Tests2
 descriptionLazyPet
 	<mongoDescription>
 	^VOMongoToOneDescription new
