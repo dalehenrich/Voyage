@@ -23,9 +23,11 @@ baseline: spec
         package: 'Voyage-Mongo-Magritte'
           with: [ spec requires: #('Magritte3' 'Voyage-Mongo-Core') ];
         package: 'Voyage-Mongo-Tests'
-          with: [ spec includes: #('Voyage-Shared-Data') ];
+          with: [ spec includes: #('Voyage-Mongo-Tests2') ];
         package: 'Voyage-Shared-Data'
           with: [ spec requires: #('Voyage-Mongo-Tests') ];
+        package: 'Voyage-Mongo-Tests2'
+          with: [ spec requires: #('Voyage-Shared-Data') ];
         package: 'Voyage-Mongo-Utils'
           with: [ spec requires: #('Voyage-Mongo-Core') ].
       spec
