@@ -1,5 +1,5 @@
 {
-	"category" : "Voyage-Shared-Data",
+	"category" : "Voyage-GemStone-Server-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -10,5 +10,5 @@
 	"name" : "VOTestObject",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TugrikObject",
 	"type" : "normal" }

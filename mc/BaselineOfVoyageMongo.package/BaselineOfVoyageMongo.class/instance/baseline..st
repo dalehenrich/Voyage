@@ -6,9 +6,8 @@ baseline: spec
     do: [ 
       spec
         package: 'Voyage-Shared-Data';
-        yourself.
-	].
-   spec
+        yourself ].
+  spec
     for: #'squeakCommon'
     do: [ 
       self magritte3: spec.
@@ -24,7 +23,9 @@ baseline: spec
         package: 'Voyage-Mongo-Magritte'
           with: [ spec requires: #('Magritte3' 'Voyage-Mongo-Core') ];
         package: 'Voyage-Mongo-Tests'
-          with: [ spec requires: #('Voyage-Shared-Data') ];
+          with: [ spec includes: #('Voyage-Shared-Data') ];
+        package: 'Voyage-Shared-Data'
+          with: [ spec requires: #('Voyage-Mongo-Tests') ];
         package: 'Voyage-Mongo-Utils'
           with: [ spec requires: #('Voyage-Mongo-Core') ].
       spec
@@ -59,7 +60,13 @@ baseline: spec
       self tugrik: spec.
       spec
         package: 'Voyage-GemStone-Server-Core'
-          with: [ spec requires: #('Tugrik' 'Voyage-Shared-Data') ];
+          with: [ 
+              spec
+                requires: #('Tugrik');
+                includes: #('Voyage-Shared-Data');
+                yourself ];
+        package: 'Voyage-Shared-Data'
+          with: [ spec requires: #('Voyage-GemStone-Server-Core') ];
         yourself.
       spec
         group: 'gemstone' with: #('Voyage-GemStone-Server-Core');
