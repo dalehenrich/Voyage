@@ -1,4 +1,4 @@
-private
+examples
 voyageBasicExample
   ^ '	"(VOGemStoneRepository database: ''my example'') enableSingleton"
 	"VORepository current"

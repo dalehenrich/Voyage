@@ -1,9 +1,13 @@
 queries
-createCollection
-  super createCollection.
+createExampleCollection
   {(Dictionary new
-    at: #'name' put: 'Voyage Basic';
+    at: #'name' put: 'Install and Update';
     at: #'order' put: 1;
+    at: #'contents' put: self installGitFileTree;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Voyage Basic';
+    at: #'order' put: 2;
     at: #'contents' put: self voyageBasicExample;
     yourself).
   (Dictionary new

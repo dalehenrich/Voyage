@@ -1,3 +1,0 @@
-accessing
-collectionName
-  ^ 'Basic Examples'

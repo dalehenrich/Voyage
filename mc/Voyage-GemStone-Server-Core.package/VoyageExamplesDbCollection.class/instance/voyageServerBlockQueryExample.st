@@ -1,4 +1,4 @@
-private
+examples
 voyageServerBlockQueryExample
   ^ '	| mongoQuery |
 	mongoQuery := Dictionary new

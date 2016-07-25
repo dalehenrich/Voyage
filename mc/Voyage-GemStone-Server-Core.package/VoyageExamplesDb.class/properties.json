@@ -10,5 +10,5 @@
 	"name" : "VoyageExamplesDb",
 	"pools" : [
 		 ],
-	"super" : "TugrikDb",
+	"super" : "TugrikExamplesDb",
 	"type" : "normal" }

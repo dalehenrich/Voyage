@@ -1,4 +1,4 @@
-private
+examples
 voyageServerBlockExample
   ^ '	"(VOGemStoneRepository database: ''my example'') enableSingleton".
 	"VORepository current"
