@@ -1,3 +1,3 @@
 system startup
 startUp
-	resolver flush
+	resolver flushOnStartUp
