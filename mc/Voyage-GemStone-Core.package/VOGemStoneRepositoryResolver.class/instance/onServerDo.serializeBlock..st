@@ -1,9 +1,9 @@
 server blocks
-onServerDo: aBlock
+onServerDo: aBlock serializeBlock: serializeBlock
 	self pool
 		withSession: [ :tugrik | 
 			| json |
-			json := tugrik onServerDo: aBlock.
+			json := tugrik onServerDo: aBlock serializeBlock: serializeBlock.
 			json isCollection
 				ifFalse: [ ^ json ].
 			^ json isDictionary
