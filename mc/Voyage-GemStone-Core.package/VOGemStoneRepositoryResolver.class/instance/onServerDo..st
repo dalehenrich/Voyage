@@ -6,4 +6,6 @@ onServerDo: aBlock
 			json := tugrik onServerDo: aBlock.
 			json isCollection
 				ifFalse: [ ^ json ].
-			^ json collect: [ :each | self retrieveObjectFromJson: each ] ]
+			^ json isDictionary
+				ifTrue: [ self retrieveObjectFromJson: json ]
+				ifFalse: [ json collect: [ :each | self retrieveObjectFromJson: each ] ] ]
