@@ -1,3 +1,3 @@
 *Voyage-GemStone-Core
-doOnServer: aVOGemStoneRepository
+voyageDoOnServer: aVOGemStoneRepository
 	^ aVOGemStoneRepository onServerDo: self
