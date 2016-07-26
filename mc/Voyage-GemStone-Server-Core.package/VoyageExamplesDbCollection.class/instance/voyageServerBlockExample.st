@@ -4,9 +4,9 @@ voyageServerBlockExample
 	"VORepository current"
 	"VORepository current dropDatabase"
 
-	[3+4] doOnServer.
+	[3+4] voyageDoOnServer.
 
-	[self halt] doOnServer.
+	[self halt] voyageDoOnServer.
 
-	[self halt] doOnServer: VORepository current.
+	[self halt] voyageDoOnServer: VORepository current.
 '

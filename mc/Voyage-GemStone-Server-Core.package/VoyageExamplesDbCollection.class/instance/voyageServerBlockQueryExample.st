@@ -9,7 +9,7 @@ voyageServerBlockQueryExample
 				yourself);
 		yourself.
 
-	[ (((Smalltalk at: #TugrikDbServer) databaseNamed: ''my example'')
+	[ ((Smalltalk at: #TugrikDbServer) databaseNamed: ''my example'')
 		selectCollectionNamed: ''TestPilot''
-		queryDict: mongoQuery) halt ] doOnServer
+		queryDict: mongoQuery ] voyageDoOnServer
 '
