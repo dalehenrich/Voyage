@@ -12,4 +12,6 @@ onServerDo: aBlock
 					theSerializedObject := jsonDictionary
 						at: '_id' put: id;
 						yourself ].
-			theSerializedObject ]
+			{('theObj' -> theSerializedObject).
+			('collectionName' -> resolver collectionNameFor: anObject class).
+			('databaseName' -> self databaseName)} asDictionary ]
