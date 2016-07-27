@@ -19,4 +19,9 @@ createExampleCollection
     at: #'name' put: 'Voyage Server Block Query';
     at: #'order' put: 10;
     at: #'contents' put: self voyageServerBlockQueryExample;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Voyage Server Block Scoping';
+    at: #'order' put: 15;
+    at: #'contents' put: self voyageServerBlockScopingExample;
     yourself)} do: [ :dict | self doInsert: dict ]
