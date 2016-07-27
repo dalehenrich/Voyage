@@ -5,10 +5,14 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
     fromString: voyageVariableBindingsSTONString.
   variableBindings := Dictionary new.
   voyageVariableBindings
-    keysAndValuesDo: [ :key :obj | 
-      | voyageObj |
+    keysAndValuesDo: [ :key :attributeDict | 
+      | voyageObj db dbCollection obj |
+      db := TugrikDbServer databaseNamed: (attributeDict at: 'databaseName').
+      dbCollection := db collectionNamed: (attributeDict at: 'collectionName').
+      obj := attributeDict at: 'serializedObj'.
       voyageObj := VoyageClassMappingDbCollection
         createTugrikObjectFrom: obj
+        dbCollection: dbCollection
         ifNew: [ :ignored |  ].
       variableBindings at: key put: voyageObj ].
   result := self
