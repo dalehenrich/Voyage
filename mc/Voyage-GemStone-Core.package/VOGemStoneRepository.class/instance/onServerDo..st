@@ -3,6 +3,13 @@ onServerDo: aBlock
 	^ resolver
 		onServerDo: aBlock
 		serializeBlock: [ :anObject | 
-			| idObject |
+			| idObject futures theSerializedObject |
 			idObject := self keyOf: anObject ifAbsent: [ OID nextOID ].
-			self serializer serialize: anObject id: idObject ]
+			futures := self serializer serialize: anObject id: idObject.
+			resolver
+				futureWithNewVersion: futures first
+				do: [ :id :object :jsonDictionary | 
+					theSerializedObject := jsonDictionary
+						at: '_id' put: id;
+						yourself ].
+			theSerializedObject ]
