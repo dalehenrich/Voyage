@@ -1,11 +1,14 @@
-queries
-doInsert: dict
+utility
+createTugrikObjectFrom: dict ifNew: newBlock
   | obj hasOid theOid query instanceClass |
   hasOid := false.
   dict
     at: '#instanceOf'
-    ifAbsent: [ ^ super doInsert: dict ]
-    ifPresent: [ :instanceOf | instanceClass := Smalltalk at: instanceOf ifAbsent: [ ^ super doInsert: dict ] ].
+    ifAbsent: [ ^ super createTugrikObjectFrom: dict ]
+    ifPresent: [ :instanceOf | 
+      instanceClass := Smalltalk
+        at: instanceOf
+        ifAbsent: [ ^ super createTugrikObjectFrom: dict ] ].
   dict
     at: '_id'
     ifPresent: [ :oid | 
@@ -25,4 +28,5 @@ doInsert: dict
           (key ~= '_id')
             ifTrue: [ obj dynamicInstVarAt: key asSymbol put: value ];
             yourself ].
-      self add: obj ]
+      newBlock value: obj ].
+  ^ obj
