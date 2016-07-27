@@ -3,7 +3,7 @@ onServerDo: aBlock serializeBlock: serializeBlock
 	self pool
 		withSession: [ :tugrik | 
 			| json |
-			json := tugrik onServerDo: aBlock serializeBlock: serializeBlock.
+			json := tugrik onVoyageServerDo: aBlock serializeBlock: serializeBlock.
 			json isCollection
 				ifFalse: [ ^ json ].
 			^ json isDictionary
