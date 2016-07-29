@@ -1,0 +1,2 @@
+persistence
+removeAll: aClass

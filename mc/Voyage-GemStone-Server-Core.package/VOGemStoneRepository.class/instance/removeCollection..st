@@ -1,0 +1,2 @@
+persistence
+removeCollection: aClass

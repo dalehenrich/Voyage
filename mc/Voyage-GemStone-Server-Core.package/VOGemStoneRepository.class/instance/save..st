@@ -1,0 +1,2 @@
+persistence
+save: anObject
