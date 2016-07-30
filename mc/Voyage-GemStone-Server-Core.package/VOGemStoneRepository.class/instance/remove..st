@@ -1,0 +1,2 @@
+persistence
+remove: anObject

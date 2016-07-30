@@ -1,0 +1,2 @@
+reseting
+resetDescriptionForClass: aClass
