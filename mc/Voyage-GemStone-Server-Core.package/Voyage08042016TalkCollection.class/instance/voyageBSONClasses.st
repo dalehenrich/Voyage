@@ -1,0 +1,22 @@
+examples
+voyageBSONClasses
+  ^ 'Voyage BSON classes:
+	Association
+	Boolean	
+	Date
+	DateAndTime
+	Dictionary
+	Float
+	Integer
+	MongoTimeStamp
+	OID
+	OrderedIdentityDictionary
+	Array
+	ByteArray
+	UUID
+	String
+	Symbol
+	SmallDictionary
+	UndefinedObject
+"
+'
