@@ -54,4 +54,9 @@ createExampleCollection
     at: #'name' put: 'Server Blocks IV';
     at: #'order' put: 50;
     at: #'contents' put: self voyageServerBlocks04;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Evenutually...';
+    at: #'order' put: 55;
+    at: #'contents' put: self voyageServerBlocks05;
     yourself)} do: [ :dict | self doInsert: dict ]
