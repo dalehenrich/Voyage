@@ -29,4 +29,29 @@ createExampleCollection
     at: #'name' put: 'Queries';
     at: #'order' put: 25;
     at: #'contents' put: self voyageQuerying01;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Server Blocks I';
+    at: #'order' put: 30;
+    at: #'contents' put: self voyageServerBlocks01;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Server Blocks II';
+    at: #'order' put: 35;
+    at: #'contents' put: self voyageServerBlocks02;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Server Blocks III';
+    at: #'order' put: 40;
+    at: #'contents' put: self voyageServerBlocks03;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Class Mapping';
+    at: #'order' put: 45;
+    at: #'contents' put: self voyageClassMapping01;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Server Blocks IV';
+    at: #'order' put: 50;
+    at: #'contents' put: self voyageServerBlocks04;
     yourself)} do: [ :dict | self doInsert: dict ]
