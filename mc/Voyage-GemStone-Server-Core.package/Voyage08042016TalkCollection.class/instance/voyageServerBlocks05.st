@@ -1,7 +1,6 @@
 examples
 voyageServerBlocks05
-  ^ '"Should be able to implement VORepository and save logic on server so that
-code can be transparently executed on server or client ..."
+  ^ '"Should be able to implement VORepository and save logic on server so that code can be transparently executed on server or client ..."
 
 [
 	| repository pilot |

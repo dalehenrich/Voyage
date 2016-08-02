@@ -1,7 +1,6 @@
 examples
 voyageServerBlocks01
-  ^ '"You can execute code on the server with server blocks. Temps vars reference by
-server block are copied to the server: "
+  ^ '"You can execute code on the server with server blocks. Temps vars reference by server block are copied to the server: "
 
 | x |
 x := 4.

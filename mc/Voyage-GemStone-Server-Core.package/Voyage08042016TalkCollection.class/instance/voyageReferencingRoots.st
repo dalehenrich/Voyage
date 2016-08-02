@@ -1,8 +1,6 @@
 examples
 voyageReferencingRoots
-  ^ '"Sometimes the objects are trees that contain other root objects. 
-If the embedded objects are root objects, Voyage will store references to 
-these objects instead of including them in the document."
+  ^ '"Sometimes the objects are trees that contain other root objects. If the embedded objects are root objects, Voyage will store references to these objects instead of including them in the document."
 
 pilot := VOTestPilot new
 	name: ''Dale'';

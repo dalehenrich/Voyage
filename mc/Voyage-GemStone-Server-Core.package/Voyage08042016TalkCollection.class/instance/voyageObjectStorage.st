@@ -1,10 +1,6 @@
 examples
 voyageObjectStorage
-  ^ '"To store objects, the class of the object must be declard as a 
-`root of the repository`. All repository roots are points of entry to 
-the database. Voyage stores more than just objects that contain literals. 
-Complete trees of objects can be stored with Voyage as well, and this 
-is done transparently.
+  ^ '"To store objects, the class of the object must be declard as a `root of the repository`. All repository roots are points of entry to the database. Voyage stores more than just objects that contain literals. Complete trees of objects can be stored with Voyage as well, and this is done transparently.
 
 To store a VOTestPilot you need to implement #isVoyageRoot on the 
 class-side to declare instances of given class as Voyage roots:
@@ -19,8 +15,7 @@ pilot := VOTestPilot new
 	yourself.
 pilot save
 
-"The following object is stored in the GemStone database (most of these are 
-dynamic instance variables -- _id and _oidValue are not):
+"The following object is stored in the GemStone database (most of these are dynamic instance variables -- _id and _oidValue are not):
 
 	(class)@           -> TugrikObject
 	(oop)@             -> 673601537

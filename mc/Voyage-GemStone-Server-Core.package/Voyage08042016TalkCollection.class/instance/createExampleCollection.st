@@ -2,8 +2,13 @@ queries
 createExampleCollection
   {(Dictionary new
     at: #'name' put: 'What is Voyage/Tugrik?';
-    at: #'order' put: 1;
+    at: #'order' put: 2;
     at: #'contents' put: self whatIsTugrik;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Why Voyage/Tugrik?';
+    at: #'order' put: 1;
+    at: #'contents' put: self whyVoyage;
     yourself).
   (Dictionary new
     at: #'name' put: 'Voyage API';

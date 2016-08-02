@@ -1,6 +1,6 @@
 examples
 voyageClassMapping01
-  ^ '"You can arrange to map server-side instances to concrete classes:"
+  ^ '"You can, howver, arrange to map server-side instances to concrete classes. In order to use this option you must arrange to load the relevant application classes into the server as well as client."
 
 | pet pilot query databaseName |
 
@@ -8,7 +8,8 @@ voyageClassMapping01
 	dbServerClassName: ''VoyageClassMappingDbServer'' 
 	database: ''gemtalk example'') enableSingleton.
 
-[(Smalltalk at: #TugrikDbServer) resetRoot. nil] voyageDoOnServer.
+[(Smalltalk at: #TugrikDbServer) resetRoot. 
+	true] voyageDoOnServer.
 
 pet := VOTestCat new
 	name: ''Bond'';

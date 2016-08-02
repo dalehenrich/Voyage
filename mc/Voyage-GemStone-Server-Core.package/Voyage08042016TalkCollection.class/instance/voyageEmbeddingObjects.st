@@ -1,9 +1,6 @@
 examples
 voyageEmbeddingObjects
-  ^ '"Objects can be as simple as associations of literals or more complex: 
-objects can contain other objects, leading to a tree of objects. Saving 
-such objects is as simple as sending the save message to them. For example, 
-let’s say that we want to add a pet to the VOPilot object:"
+  ^ '"Objects can be as simple as associations of literals or more complex: objects can contain other objects, leading to a tree of objects. Saving such objects is as simple as sending the save message to them. For example, let’s say that we want to add a pet to the VOPilot object:"
 
 pilot := VOTestPilot new
 	name: ''Dale'';
