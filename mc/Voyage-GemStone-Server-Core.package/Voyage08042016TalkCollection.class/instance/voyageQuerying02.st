@@ -2,7 +2,7 @@ examples
 voyageQuerying02
   ^ '"Queries using blocks or MongoQueries:"
 
-"BROKEN"
+"BROKEN or not possible"
 
 pilot := VOTestPilot new
 	name: ''Dale'';
@@ -24,4 +24,5 @@ VORepository current selectOne: VOTestPilot where: [ :each | each at: ''pet.name
 
 VORepository current selectOne: VOTestPilot where: [ :each | each at: ''pet.__id'' = pet voyageId ].
 
+VORepository current selectOne: VOTestPilot where: ''[:each | (each dynamicInstVarAt: #name) = ''''Janet'''']''
 '

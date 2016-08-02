@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createExampleCollection" : "dkh 08/01/2016 17:21",
+		"createExampleCollection" : "dkh 08/02/2016 06:14",
 		"voyageAPI" : "dkh 08/01/2016 11:45",
 		"voyageBSONClasses" : "dkh 08/01/2016 12:44",
 		"voyageEmbeddingObjects" : "dkh 08/01/2016 17:19",
 		"voyageObjectStorage" : "dkh 08/01/2016 16:50",
-		"voyageQuerying01" : "dkh 08/01/2016 17:24",
-		"voyageQuerying02" : "dkh 08/01/2016 17:24",
+		"voyageQuerying01" : "dkh 08/02/2016 06:51",
+		"voyageQuerying02" : "dkh 08/02/2016 06:52",
 		"voyageReferencingRoots" : "dkh 08/01/2016 17:07",
 		"whatIsTugrik" : "dkh 08/01/2016 11:30" } }
