@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Shared-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOTestNonRootCat",
+	"pools" : [
+		 ],
+	"super" : "VOTestNonRootPet",
+	"type" : "normal" }

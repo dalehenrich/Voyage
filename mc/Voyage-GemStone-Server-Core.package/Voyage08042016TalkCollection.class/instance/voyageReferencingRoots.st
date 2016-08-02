@@ -1,55 +1,44 @@
 examples
 voyageReferencingRoots
   ^ '"Sometimes the objects are trees that contain other root objects. 
-If the embedded objects (the roles) are root objects, Voyage will 
-store references to these objects instead of including them in the document.
-After we add #isVoyageRoot to the Point class:
+If the embedded objects are root objects, Voyage will store references to 
+these objects instead of including them in the document."
 
-	Point class>>isVoyageRoot
-		^ true
+pilot := VOTestPilot new
+	name: ''Dale'';
+	pet: (VOTestCat new
+		name: ''Bond'';
+		yourself);
+	yourself.
+pilot save
 
- and save the association"
+"The stored pilot looks like the following in GemStone:
 
-assoc := 42@1 -> (10@20).
-assoc save.
+	(class)@           -> TugrikObject
+	(oop)@             -> 673601537
+	(invariant)@       -> true
+	(committed)@       -> true
+	_id@               -> OID(579fdf6a96240ba54f08945d)
+	_oidValue@         -> 27118470113675083771403605085
+	#instanceOf@       -> #''VOTestPilot''
+	#version@          -> 2622850988
+	name@              -> ''Dale''
+	pet@               -> aDictionary( 
+							''#collection''->''pet'',
+							''#instanceOf''->''VOTestCat'',
+							''__id''->OID(579fe37796240ba54f089473))
 
-"The stored association looks like the following in GemStone:
-
-	(class)@     -> TugrikObject
-	(oop)@       -> 672841473
-	(invariant)@ -> true
-	(committed)@ -> true
-	_id@         -> OID(579fca32391d54c1da5b1649)
-	_oidValue@   -> 27118369904258029197700306505
-	#instanceOf@ -> #''Association''
-	#version@    -> 3052998645
-	key@         -> aDictionary( ''#collection''->#''Point'', ''#instanceOf''->''Point'', 
-					''__id''->OID(579fca32391d54c1da5b164a))
-	value@       -> aDictionary( ''#collection''->#''Point'', ''#instanceOf''->''Point'', 					''__id''->OID(579fca32391d54c1da5b164b))
-
-along with the following two Point objects:
-
-	(class)@     -> TugrikObject
-	(oop)@       -> 672678657
-	(invariant)@ -> true
-	(committed)@ -> true
-	_id@         -> OID(579fca32391d54c1da5b164a)
-	_oidValue@   -> 27118369904258029197700306506
-	#instanceOf@ -> #''Point''
-	#version@    -> 2376436083
-	x@           -> 42
-	y@           -> 1
+along with the following VOTestCat instance:
 
 	(class)@     -> TugrikObject
-	(oop)@       -> 672673025
+	(oop)@       -> 675964673
 	(invariant)@ -> true
 	(committed)@ -> true
-	_id@         -> OID(579fca32391d54c1da5b164b)
-	_oidValue@   -> 27118369904258029197700306507
-	#instanceOf@ -> #''Point''
-	#version@    -> 3468240979
-	x@           -> 10
-	y@           -> 20
+	_id@         -> OID(579fe37796240ba54f089473)
+	_oidValue@   -> 27118489242948688208208630899
+	#instanceOf@ -> #''VOTestCat''
+	#version@    -> 2440839322
+	name@        -> ''Bond''
 
 "
 '

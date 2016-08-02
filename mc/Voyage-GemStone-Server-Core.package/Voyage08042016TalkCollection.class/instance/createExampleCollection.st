@@ -24,4 +24,14 @@ createExampleCollection
     at: #'name' put: 'Referencing other roots';
     at: #'order' put: 20;
     at: #'contents' put: self voyageReferencingRoots;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Queries I';
+    at: #'order' put: 25;
+    at: #'contents' put: self voyageQuerying01;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Queries II';
+    at: #'order' put: 30;
+    at: #'contents' put: self voyageQuerying02;
     yourself)} do: [ :dict | self doInsert: dict ]
