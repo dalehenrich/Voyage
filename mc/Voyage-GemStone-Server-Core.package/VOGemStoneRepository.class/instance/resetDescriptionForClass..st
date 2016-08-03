@@ -1,2 +1,0 @@
-reseting
-resetDescriptionForClass: aClass

@@ -2,7 +2,7 @@ examples
 voyageIssue03
   ^ '"Cross Image Issue
 -----------------
-Embedded references are not updated automatically when a parent object _is_ refreshed. --- implication that is that each object must be refreshed before updating. However, if a parent object is changed then the graph appears to be refreshed. "
+Embedded references are not updated automatically when a parent object _is_ refreshed. --- implication is that each object must be refreshed before updating. However, if a parent object is changed then the graph appears to be refreshed. "
 
 rep1 := VOGemStoneRepository database: ''gemtalk example''.
 rep2 := VOGemStoneRepository database: ''gemtalk example''.
