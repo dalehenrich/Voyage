@@ -61,6 +61,12 @@ baseline: spec
     do: [ 
       self tugrik: spec.
       spec
+        baseline: 'Magritte3'
+        with: [ 
+          spec
+            loads: #('Core');
+            repository: 'github://GsDevKit/Magritte3:v3.?/repository' ].
+      spec
         package: 'Voyage-GemStone-Server-Core'
           with: [ 
               spec
