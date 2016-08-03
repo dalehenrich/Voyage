@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testCrossImageEmbeddedUpdates" : "TravisCI 8/3/2016 15:17",
+		"testCrossImageEmbeddedUpdates" : "TravisCI 8/3/2016 15:43",
 		"testCrossImageRootUpdates" : "TravisCI 8/2/2016 17:09",
 		"testNonRootEmbeddedObjectSharing" : "dkh 7/30/2016 12:03",
 		"testSelectManyWithAllKeyword_1" : "dkh 5/9/2016 16:12",
