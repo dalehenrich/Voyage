@@ -26,6 +26,7 @@ testCrossImageEmbeddedUpdates
 		cr;
 		show: 'testCrossImageEmbeddedUpdates [1]'.
 	rep1 save: pilot1.
+	self concurrencyDelay.	"we're querying Mongo before the save has finished?"
 	pilot2 := rep2 selectOne: VOTestPilot where: [ :each | each name = 'Janet' ].
 	Transcript
 		cr;
