@@ -2,11 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createExampleCollection" : "dkh 08/02/2016 14:14",
+		"createExampleCollection" : "dkh 08/02/2016 15:48",
 		"voyageAPI" : "dkh 08/02/2016 14:26",
 		"voyageBSONClasses" : "dkh 08/01/2016 12:44",
 		"voyageClassMapping01" : "dkh 08/02/2016 14:30",
 		"voyageEmbeddingObjects" : "dkh 08/02/2016 14:12",
+		"voyageIssue01" : "dkh 08/02/2016 14:46",
+		"voyageIssue02" : "dkh 08/02/2016 16:14",
+		"voyageIssue03" : "dkh 08/02/2016 16:27",
 		"voyageObjectStorage" : "dkh 08/02/2016 14:12",
 		"voyageQuerying01" : "dkh 08/02/2016 06:51",
 		"voyageQuerying02" : "dkh 08/02/2016 06:52",

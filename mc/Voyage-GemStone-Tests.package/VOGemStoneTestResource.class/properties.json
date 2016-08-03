@@ -6,7 +6,8 @@
 		"SessionDescription" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"repository" ],
+		"repository",
+		"repository2" ],
 	"name" : "VOGemStoneTestResource",
 	"pools" : [
 		 ],

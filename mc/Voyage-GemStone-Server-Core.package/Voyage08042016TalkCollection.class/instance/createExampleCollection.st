@@ -61,7 +61,22 @@ createExampleCollection
     at: #'contents' put: self voyageServerBlocks04;
     yourself).
   (Dictionary new
-    at: #'name' put: 'Evenutually...';
+    at: #'name' put: 'Soon...';
     at: #'order' put: 55;
     at: #'contents' put: self voyageServerBlocks05;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Issues I';
+    at: #'order' put: 60;
+    at: #'contents' put: self voyageIssue01;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Issues II';
+    at: #'order' put: 65;
+    at: #'contents' put: self voyageIssue02;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Issues III';
+    at: #'order' put: 70;
+    at: #'contents' put: self voyageIssue03;
     yourself)} do: [ :dict | self doInsert: dict ]

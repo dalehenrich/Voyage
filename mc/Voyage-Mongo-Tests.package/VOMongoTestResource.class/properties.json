@@ -6,7 +6,8 @@
 		"MongoHost" ],
 	"commentStamp" : "TorstenBergmann 3/4/2015 20:43",
 	"instvars" : [
-		"repository" ],
+		"repository",
+		"repository2" ],
 	"name" : "VOMongoTestResource",
 	"pools" : [
 		 ],
