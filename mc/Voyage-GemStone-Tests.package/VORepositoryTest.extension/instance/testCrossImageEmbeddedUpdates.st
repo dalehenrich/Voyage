@@ -31,8 +31,8 @@ testCrossImageEmbeddedUpdates
 	pilot1 pet owner aux: 2.
 	rep1 save: pilot1 pet owner.
 	pilot2 := rep2 selectOne: VOTestPilot where: [ :each | each name = 'Janet' ].
-	self assert: pilot1 aux = pilot2 aux.	
-	self deny: pilot1 pet owner aux = pilot2 pet owner aux.	"This is unexpected behavior ... have to explicily update a child object?"
+	self assert: pilot1 aux = pilot2 aux description: 'pilot aux not equal after initial select for pilot2'.	
+	self deny: pilot1 pet owner aux = pilot2 pet owner aux description: 'pilot pet owner aux equal after initial select for pilot2'.	.	"This is unexpected behavior ... have to explicily update a child object?"
 	rep2 selectAll: VOTestPilot.
-	self assert: pilot1 pet owner aux = pilot2 pet owner aux.	"Update all VOTestPilots ought to refresh owner"
+	self assert: pilot1 pet owner aux = pilot2 pet owner aux description: 'pilot pet owner aux equal after selectAll for VOTestPilot'.	"Update all VOTestPilots ought to refresh owner"
 	
