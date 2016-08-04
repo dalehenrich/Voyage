@@ -3,13 +3,13 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'Voyage',
       #directory : 'mc',
-      #load : [ 'gemstone tests' ],
+      #load : [ 'gemstone tests', 'mongo tests', 'unqlite tests' ],
       #platforms : [ #pharo ]
     },
     SCIMetacelloLoadSpec {
       #baseline : 'Voyage',
       #directory : 'mc',
-      #load : [ 'gemstone tests', 'mongo tests', 'unqlite tests' ],
+      #load : [ 'gemstone tests' ],
       #platforms : [ #gemstone ]
     } 
   ],
