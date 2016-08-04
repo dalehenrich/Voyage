@@ -1,6 +1,6 @@
 examples
 voyageServerBlocks03
-  ^ '"...but the server is an instance of TugrikObject not VOTestCase:"
+  ^ '"...but the objects on the server instances of TugrikObject not VOTestPilot or VOTestCat"
 
 | query databaseName |
 

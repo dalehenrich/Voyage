@@ -66,6 +66,11 @@ createExampleCollection
     at: #'contents' put: self voyageServerBlocks05;
     yourself).
   (Dictionary new
+    at: #'name' put: 'Voyage Challenges';
+    at: #'order' put: 56;
+    at: #'contents' put: self voyageIssues;
+    yourself).
+  (Dictionary new
     at: #'name' put: 'Issues I';
     at: #'order' put: 60;
     at: #'contents' put: self voyageIssue01;
