@@ -2,6 +2,11 @@ examples
 voyageQuerying01
   ^ '"Queries using blocks or MongoQueries:"
 
+VORepository current 
+	removeAll: VOTestCat; 
+	removeAll: VOTestPilot;
+	yourself.
+
 pilot := VOTestPilot new
 	name: ''Dale'';
 	aux: 15;
