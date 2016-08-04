@@ -35,13 +35,13 @@ baseline: spec
 	spec for: #'pharo5.x' do: [
 		self tugrik: spec.
 		spec
-			package: 'Voyage-GemStone-Core' with: [ spec requires: #('Tugrik' 'Voyage-JSON' 'Voyage-Model-Core') ];
-			package: 'Voyage-GemStone-Help' with: [ spec requires: #('Voyage-GemStone-Core') ];
-			package: 'Voyage-GemStone-Tests' with: [ spec requires: #('Voyage-GemStone-Core' 'Voyage-Model-Tests') ];
+			package: 'Voyage-Tugrik-Core' with: [ spec requires: #('Tugrik' 'Voyage-JSON' 'Voyage-Model-Core') ];
+			package: 'Voyage-Tugrik-Help' with: [ spec requires: #('Voyage-Tugrik-Core') ];
+			package: 'Voyage-Tugrik-Tests' with: [ spec requires: #('Voyage-Tugrik-Core' 'Voyage-Model-Tests') ];
 			yourself.
 		spec
-			group: 'gemstone' with: #('core' 'Voyage-GemStone-Core' 'Voyage-GemStone-Help');
-			group: 'gemstone tests' with: #('gemstone' 'Voyage-GemStone-Tests' 'core tests');
+			group: 'tugrik' with: #('core' 'Voyage-Tugrik-Core' 'Voyage-Tugrik-Help');
+			group: 'tugrik tests' with: #('tugrik' 'Voyage-Tugrik-Tests' 'core tests');
         yourself ].
 	spec for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x') do: [ 
 		self tugrik: spec.
@@ -54,6 +54,6 @@ baseline: spec
 			package: 'Voyage-GemStone-Server-Core' with: [ spec requires: #('Tugrik')];
 			yourself.
 		spec
-			group: 'gemstone' with: #('Voyage-GemStone-Server-Core');
-			group: 'gemstone tests' with: #('gemstone');
+			group: 'tugrik' with: #('Voyage-GemStone-Server-Core');
+			group: 'tugrik tests' with: #('tugrik');
 			yourself ]
