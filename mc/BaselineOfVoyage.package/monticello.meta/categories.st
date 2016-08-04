@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'BaselineOfVoyage'!
+SystemOrganization addCategory: #BaselineOfVoyage!

@@ -3,7 +3,7 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'Voyage',
       #directory : 'mc',
-      #load : [ 'tugrik tests', 'mongo tests', 'unqlite tests' ],
+      #load : [ 'tugrik tests' ],
       #platforms : [ #pharo ]
     },
     SCIMetacelloLoadSpec {
