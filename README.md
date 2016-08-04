@@ -1,4 +1,4 @@
-Voyage [![Build Status](https://travis-ci.org/pharo-nosql/voyage.png)](http://travis-ci.org/pharo-nosql/voyage)
+Voyage [![Build Status](https://travis-ci.org/dalehenrich/voyage.svg?branch=tugrik)](https://travis-ci.org/dalehenrich/voyage)
 ======
 
 Voyage is an object persistence abstraction layer for Pharo.
