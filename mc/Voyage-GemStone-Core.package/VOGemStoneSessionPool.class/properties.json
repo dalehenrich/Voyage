@@ -1,0 +1,18 @@
+{
+	"category" : "Voyage-GemStone-Core-Pooling",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"activeSessions",
+		"sessionDescription",
+		"database",
+		"populating",
+		"dbServerClassName" ],
+	"name" : "VOGemStoneSessionPool",
+	"pools" : [
+		 ],
+	"super" : "VOSessionPool",
+	"type" : "normal" }

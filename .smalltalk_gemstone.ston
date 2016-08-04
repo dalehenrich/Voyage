@@ -1,0 +1,21 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'VoyageMongo',
+      #directory : 'mc',
+      #load : [ 'gemstone', 'gemstone tests' ],
+      #platforms : [ #pharo , #gemstone ]
+    } 
+  ],
+  #testing : {
+    #include: {
+      #projects : [ 'Tugrik' ]
+    }
+  },
+  #configuring : [
+    SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'Voyage',
+     #platforms : [ #gemstoneClient ] 
+    }
+  ]
+}

@@ -5,3 +5,4 @@ tearDown
 		collect: [ :each | each persistentClass ] as: Set)
 		do: [ :each | repository removeAll: each ].
 	repository := nil.
+	repository2 := nil.

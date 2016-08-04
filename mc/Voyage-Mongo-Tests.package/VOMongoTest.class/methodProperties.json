@@ -2,5 +2,7 @@
 	"class" : {
 		"resources" : "FrancoisStephany 8/8/2012 15:03" },
 	"instance" : {
+		"concurrencyDelay" : "TravisCI 8/3/2016 15:56",
 		"repository" : "EstebanLorenzano 4/21/2015 16:43",
-		"tearDown" : "MartinDias 3/29/2016 13:02" } }
+		"repository2" : "TravisCI 8/2/2016 17:03",
+		"tearDown" : "TravisCI 8/3/2016 15:56" } }

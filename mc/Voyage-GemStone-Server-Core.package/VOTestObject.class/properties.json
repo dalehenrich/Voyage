@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-GemStone-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "FrancoisStephany 8/7/2012 12:47",
+	"instvars" : [
+		 ],
+	"name" : "VOTestObject",
+	"pools" : [
+		 ],
+	"super" : "TugrikObject",
+	"type" : "normal" }
