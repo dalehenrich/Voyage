@@ -3,8 +3,14 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'Voyage',
       #directory : 'mc',
-      #load : [ 'gemstone', 'gemstone tests' ],
-      #platforms : [ #pharo , #gemstone ]
+      #load : [ 'gemstone tests' ],
+      #platforms : [ #pharo ]
+    },
+    SCIMetacelloLoadSpec {
+      #baseline : 'Voyage',
+      #directory : 'mc',
+      #load : [ 'gemstone tests', 'mongo tests', 'unqlite tests' ],
+      #platforms : [ #gemstone ]
     } 
   ],
   #testing : {
@@ -14,7 +20,7 @@ SmalltalkCISpec {
   },
   #configuring : [
     SCIGemStoneServerConfigSpec {
-     #defaultSessionName : 'Voyage',
+     #defaultSessionName : 'Uncle',
      #platforms : [ #gemstoneClient ] 
     }
   ]

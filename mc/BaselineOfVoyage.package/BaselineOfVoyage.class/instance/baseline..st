@@ -41,7 +41,7 @@ baseline: spec
 			yourself.
 		spec
 			group: 'gemstone' with: #('core' 'Voyage-GemStone-Core' 'Voyage-GemStone-Help');
-			group: 'gemstone tests' with: #('Voyage-GemStone-Tests' 'core tests');
+			group: 'gemstone tests' with: #('gemstone' 'Voyage-GemStone-Tests' 'core tests');
         yourself ].
 	spec for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x') do: [ 
 		self tugrik: spec.
