@@ -12,7 +12,8 @@
 		"currency",
 		"lazyPet",
 		"pastPets",
-		"keywords" ],
+		"keywords",
+		"aux" ],
 	"name" : "VOTestPilot",
 	"pools" : [
 		 ],

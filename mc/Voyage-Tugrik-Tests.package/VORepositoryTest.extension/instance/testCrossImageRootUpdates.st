@@ -11,6 +11,7 @@ testCrossImageRootUpdates
 	rep1 save: pilot1.
 	pilot1 aux: pilot1 aux + 1.	"2"
 	rep1 save: pilot1.
+	self concurrencyDelay.	"we're querying Mongo before the save has finished?"
 	pilot2 := (rep2 selectAll: VOTestPilot) first.
 	pilot2 aux: pilot2 aux + 10.	"12"
 	rep2 save: pilot2.

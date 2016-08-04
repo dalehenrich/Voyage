@@ -41,7 +41,7 @@ baseline: spec
 			yourself.
 		spec
 			group: 'tugrik' with: #('core' 'Voyage-Tugrik-Core' 'Voyage-Tugrik-Help' 'Voyage-Mongo-Utils');
-			group: 'tugrik tests' with: #('tugrik' 'Voyage-Tugrik-Tests' 'core tests');
+			group: 'tugrik tests' with: #('tugrik' 'Voyage-Tugrik-Tests' 'core tests' 'mongo tests');
         yourself ].
 	spec for: #(#'gs3.2.x' #'gs3.3.x' #'gs3.4.x') do: [ 
 		self tugrik: spec.
