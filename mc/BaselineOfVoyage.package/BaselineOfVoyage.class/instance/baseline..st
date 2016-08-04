@@ -51,9 +51,9 @@ baseline: spec
 					loads: #('Core');
 					repository: 'github://GsDevKit/Magritte3:v3.?/repository' ].
 		spec 
-			package: 'Voyage-GemStone-Server-Core' with: [ spec requires: #('Tugrik')];
+			package: 'Voyage-Tugrik-Server-Core' with: [ spec requires: #('Tugrik')];
 			yourself.
 		spec
-			group: 'tugrik' with: #('Voyage-GemStone-Server-Core');
+			group: 'tugrik' with: #('Voyage-Tugrik-Server-Core');
 			group: 'tugrik tests' with: #('tugrik');
 			yourself ]

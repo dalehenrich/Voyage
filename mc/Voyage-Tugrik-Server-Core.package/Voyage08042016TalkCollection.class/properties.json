@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "Voyage08042016TalkCollection",
+	"pools" : [
+		 ],
+	"super" : "TugrikExamplesDbCollection",
+	"type" : "normal" }
