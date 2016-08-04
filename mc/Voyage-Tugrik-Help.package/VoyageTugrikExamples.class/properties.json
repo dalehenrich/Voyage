@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Help",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VoyageTugrikExamples",
+	"pools" : [
+		 ],
+	"super" : "VoyageTugrikHelp",
+	"type" : "normal" }

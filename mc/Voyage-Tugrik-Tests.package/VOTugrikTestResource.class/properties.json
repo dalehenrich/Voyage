@@ -1,0 +1,15 @@
+{
+	"category" : "Voyage-Tugrik-Tests-Resources",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SessionDescription" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"repository2" ],
+	"name" : "VOTugrikTestResource",
+	"pools" : [
+		 ],
+	"super" : "TestResource",
+	"type" : "normal" }

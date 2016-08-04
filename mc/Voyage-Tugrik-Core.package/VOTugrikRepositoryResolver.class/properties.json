@@ -1,0 +1,17 @@
+{
+	"category" : "Voyage-Tugrik-Core-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"pool",
+		"collections",
+		"dbServerClassName" ],
+	"name" : "VOTugrikRepositoryResolver",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
