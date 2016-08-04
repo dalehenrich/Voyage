@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'VoyageMongo',
+      #baseline : 'Voyage',
       #directory : 'mc',
       #load : [ 'gemstone', 'gemstone tests' ],
       #platforms : [ #pharo , #gemstone ]
