@@ -62,6 +62,7 @@ baseline: spec
 		spec 
 			package: 'Voyage-GemStone-JSON';
 			package: 'Voyage-JSON' with: [ spec  requires: #('Voyage-GemStone-JSON')];
+			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON') ];
 			package: 'Voyage-Tugrik-Server-Core' with: [ spec requires: #('Tugrik' 'Voyage-Model-Core' 'Voyage-JSON' 'Voyage-Mongo-JSON')];
 			yourself.
 		spec
