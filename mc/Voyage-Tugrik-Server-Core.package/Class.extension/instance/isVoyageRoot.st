@@ -1,3 +1,3 @@
-*voyage-tugrik-server-core
+*voyage-model-core-extensions
 isVoyageRoot
-  ^ false
+	^false

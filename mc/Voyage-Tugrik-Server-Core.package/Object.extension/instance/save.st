@@ -1,3 +1,3 @@
-*voyage-tugrik-server-core
+*Voyage-Model-Core-Extensions
 save
-  self class save: self
+	self class save: self
