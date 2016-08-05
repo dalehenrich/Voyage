@@ -1,0 +1,3 @@
+*Voyage-JSON
+defaultKind 
+	^nil
