@@ -1,6 +1,6 @@
 utility
 visitTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
-  | obj hasOid theOid query instanceClass |
+  | wrapper hasOid theOid query instanceClass |
   hasOid := false.
   dict
     at: self fieldType
@@ -22,19 +22,22 @@ visitTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
     ifPresent: [ :oid | 
       hasOid := true.
       theOid := oid.
-      obj := aTugrikDbCollection objWithOid: oid ifAbsent: [  ] ].
-  obj
+      wrapper := aTugrikDbCollection objWithOid: oid ifAbsent: [  ] ].
+  wrapper
     ifNil: [ 
-      obj := hasOid
+      | obj |
+      wrapper := hasOid
         ifTrue: [ 
-          instanceClass basicNew
+          VoyageWrapperObject basicNew
             _id: theOid;
             yourself ]
-        ifFalse: [ instanceClass new ].
+        ifFalse: [ VoyageWrapperObject basicNew ].
+      obj := instanceClass basicNew.
+      wrapper theObject: obj.
       dict
         keysAndValuesDo: [ :key :value | 
           (key ~= self fieldRootId)
             ifTrue: [ obj dynamicInstVarAt: key asSymbol put: value ];
             yourself ].
-      newBlock value: obj ].
-  ^ obj
+      newBlock value: wrapper ].
+  ^ wrapper theObject

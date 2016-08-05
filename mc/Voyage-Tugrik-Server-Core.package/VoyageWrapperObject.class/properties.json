@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"theObject" ],
+	"name" : "VoyageWrapperObject",
+	"pools" : [
+		 ],
+	"super" : "TugrikObject",
+	"type" : "normal" }

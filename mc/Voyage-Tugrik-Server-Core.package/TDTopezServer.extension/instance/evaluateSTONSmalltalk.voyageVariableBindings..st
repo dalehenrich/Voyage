@@ -15,7 +15,7 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
           dbCollection := db
             collectionNamed: (attributeDict at: 'collectionName').
           voyageObj := VoyageClassMappingDbCollection
-            createTugrikObjectFrom: obj
+            visitTugrikObjectFrom: obj
             dbCollection: dbCollection
             ifNew: [ :ignored |  ].
           variableBindings at: key put: voyageObj ]
