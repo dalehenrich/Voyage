@@ -1,0 +1,3 @@
+defaults
+materializerClass
+  ^ VOJSONMaterializer

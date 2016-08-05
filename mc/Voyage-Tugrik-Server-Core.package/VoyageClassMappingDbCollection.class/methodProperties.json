@@ -1,5 +1,9 @@
 {
 	"class" : {
-		"createTugrikObjectFrom:dbCollection:ifNew:" : "dkh 07/26/2016 18:24" },
+		"createTugrikObjectFrom:dbCollection:ifNew:" : "dkh 07/26/2016 18:24",
+		"fieldRootId" : "dkh 08/05/2016 15:22",
+		"fieldType" : "dkh 08/05/2016 15:21",
+		"materializerClass" : "dkh 08/05/2016 15:21",
+		"visitTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/05/2016 15:30" },
 	"instance" : {
 		 } }
