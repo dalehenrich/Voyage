@@ -20,6 +20,9 @@ baseline: spec
 		self punqlite: spec.		
 		spec
 			"core"
+			package: 'Voyage-Pharo-Model-Core';
+			package: 'Voyage-Model-Core' with: [ spec includes: 'Voyage-Pharo-Model-Core' ];
+			package: 'Voyage-Pharo-Model-Tests' with: [ spec requires: 'Voyage-Pharo-Model-Core' ];
 			package: 'Voyage-Memory-Core' with: [ spec requires: 'Voyage-Model-Core' ];
 			package: 'Voyage-Pharo-JSON';
 			package: 'Voyage-JSON-Core' with: [ spec requires: #('Voyage-Pharo-JSON') ];
@@ -36,6 +39,7 @@ baseline: spec
 			
 		spec
 			group: 'default' with: #('core' 'memory' 'mongo tests');
+			group: 'core tests' with: #('Voyage-Pharo-Model-Core');
 			group: 'memory' with: #('Voyage-Memory-Core');
 			group: 'mongo' with: #( 'Voyage-Mongo-Core' 'Voyage-Mongo-Utils');
 			group: 'mongo tests' with: #('mongo' 'core tests' 'Voyage-Mongo-Tests');
