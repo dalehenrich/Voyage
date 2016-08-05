@@ -10,7 +10,7 @@ baseline: spec
 			package: 'Voyage-JSON-Tests' with: [ spec requires: 'Voyage-JSON-Core' ];
 			yourself.
 		spec
-			group: 'core' with: #('Voyage-Model-Core' 'Voyage-JSON');
+			group: 'core' with: #('Voyage-Model-Core' 'Voyage-JSON-Core');
 			group: 'core tests' with: #('Voyage-Model-Tests' 'Voyage-JSON-Tests');
 			yourself
 	].
