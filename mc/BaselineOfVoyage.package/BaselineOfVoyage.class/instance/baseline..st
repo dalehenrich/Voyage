@@ -6,13 +6,13 @@ baseline: spec
 		spec
 			package: 'Voyage-Model-Core';
 			package: 'Voyage-Model-Tests' with: [ spec requires: 'Voyage-Model-Core' ];
-		 	package: 'Voyage-JSON' with: [ spec requires: #('Voyage-Model-Core' 'Magritte3');
+		 	package: 'Voyage-JSON' with: [ spec requires: #('Voyage-Model-Core' 'Magritte3')];
 			package: 'Voyage-JSON-Tests' with: [ spec requires: 'Voyage-JSON' ];
 			yourself.
 		spec
 			group: 'core' with: #('Voyage-Model-Core' 'Voyage-JSON');
 			group: 'core tests' with: #('Voyage-Model-Tests' 'Voyage-JSON-Tests');
-			yourself ]
+			yourself
 	].
 	spec for: #pharo do: [
 		self magritte3: spec.
