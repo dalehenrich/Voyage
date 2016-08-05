@@ -1,13 +1,13 @@
 {
-	"category" : "Voyage-Model-Core-Base",
+	"category" : "Voyage-Tugrik-Server-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "dkh 08/05/2016 11:47",
 	"instvars" : [
 		 ],
-	"name" : "VORepositoryContainer",
+	"name" : "VOSeedFastVersionGenerator",
 	"pools" : [
 		 ],
 	"super" : "Object",

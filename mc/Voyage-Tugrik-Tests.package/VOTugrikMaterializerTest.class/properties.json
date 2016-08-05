@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOTugrikMaterializerTest",
+	"pools" : [
+		 ],
+	"super" : "VOJSONMaterializerTest",
+	"type" : "normal" }

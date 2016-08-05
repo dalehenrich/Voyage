@@ -2,6 +2,6 @@ initialization
 initialize 
 	super initialize.
 	self forceEager: false.
-	self versionGenerator: VOSeedVersionGenerator new.
+	self versionGenerator: self defaultVersionGenerator.
 	self initializeCache.
 	self initializeResolver.

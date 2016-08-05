@@ -64,8 +64,9 @@ baseline: spec
 			package: 'Voyage-JSON-Core' with: [ spec  requires: #('Voyage-GemStone-JSON')];
 			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON-Core') ];
 			package: 'Voyage-Tugrik-Server-Core' with: [ spec requires: #('Tugrik' 'Voyage-Model-Core' 'Voyage-JSON-Core' 'Voyage-Mongo-JSON')];
+			package: 'Voyage-Tugrik-Server-Tests' with: [ spec requires: #('Voyage-Tugrik-Server-Core')];
 			yourself.
 		spec
 			group: 'tugrik' with: #('core' 'Voyage-Tugrik-Server-Core');
-			group: 'tugrik tests' with: #('core tests' 'tugrik');
+			group: 'tugrik tests' with: #('core tests' 'tugrik' 'Voyage-Tugrik-Server-Tests');
 			yourself ]

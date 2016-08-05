@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Server-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 08/05/2016 11:49",
+	"instvars" : [
+		"versionGenerator" ],
+	"name" : "VOSeedFastVersionGeneratorTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
