@@ -14,6 +14,7 @@ testSelectManyWithAllKeyword
 	self repository save: pilot2.
 	self repository save: pilot3.
 	self repository flushCache.
+	self concurrencyDelay. "methinks this is why this test randomly failes ... all of the updates from the saves are not available without delay?"
 	
 	mongoQuery :=  Dictionary new
 		at: 'keywords' put: (Dictionary new 

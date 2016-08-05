@@ -16,7 +16,7 @@
 		"testSaveWithSubclasses" : "FrancoisStephany 8/8/2012 15:08",
 		"testSaveWithSubclassesAndRelations" : "FrancoisStephany 8/8/2012 15:09",
 		"testSelectAllJustAfterRemove" : "MartinDias 3/3/2016 00:22",
-		"testSelectManyWithAllKeyword" : "EstebanLorenzano 6/14/2016 15:08",
+		"testSelectManyWithAllKeyword" : "dkh 8/5/2016 10:27",
 		"testSelectManyWithLimitAndOffset" : "EstebanLorenzano 6/14/2016 17:01",
 		"testSelectOneWithSubclass" : "EstebanLorenzano 6/14/2016 14:43",
 		"testUpdate" : "EstebanLorenzano 2/11/2016 19:01",
