@@ -25,3 +25,6 @@ matrix:
   allow_failures:
     - smalltalk_config: .smalltalk-unqlite.ston
 
+branches:
+  except:
+    - classmapper
