@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-GemStone-JSON-Magritte",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "VORelationDescription",
+	"pools" : [
+		 ],
+	"super" : "VODescription",
+	"type" : "normal" }
