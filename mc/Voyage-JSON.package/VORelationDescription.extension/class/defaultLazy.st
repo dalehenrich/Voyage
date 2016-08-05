@@ -1,3 +1,0 @@
-*Voyage-JSON
-defaultLazy 
-	^ true

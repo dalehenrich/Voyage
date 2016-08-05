@@ -6,8 +6,8 @@ baseline: spec
 		spec
 			package: 'Voyage-Model-Core';
 			package: 'Voyage-Model-Tests' with: [ spec requires: 'Voyage-Model-Core' ];
-		 	package: 'Voyage-JSON' with: [ spec requires: #('Voyage-Model-Core' 'Magritte3')];
-			package: 'Voyage-JSON-Tests' with: [ spec requires: 'Voyage-JSON' ];
+		 	package: 'Voyage-JSON-Core' with: [ spec requires: #('Voyage-Model-Core' 'Magritte3')];
+			package: 'Voyage-JSON-Tests' with: [ spec requires: 'Voyage-JSON-Core' ];
 			yourself.
 		spec
 			group: 'core' with: #('Voyage-Model-Core' 'Voyage-JSON');
@@ -22,13 +22,13 @@ baseline: spec
 			"core"
 			package: 'Voyage-Memory-Core' with: [ spec requires: 'Voyage-Model-Core' ];
 			package: 'Voyage-Pharo-JSON';
-			package: 'Voyage-JSON' with: [ spec requires: #('Voyage-Pharo-JSON') ];
+			package: 'Voyage-JSON-Core' with: [ spec requires: #('Voyage-Pharo-JSON') ];
 			"mongo"
 			package: 'Voyage-Mongo-Core' with: [ spec requires: #('MongoTalk' 'Voyage-Model-Core' 'Voyage-Mongo-JSON') ];
-			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON') ];
+			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON-Core') ];
 			package: 'Voyage-Mongo-Tests';
 			"unqlite"
-			package: 'Voyage-UnQLite' with: [ spec requires: #('PunQLite' 'Voyage-Model-Core' 'Voyage-JSON') ];
+			package: 'Voyage-UnQLite' with: [ spec requires: #('PunQLite' 'Voyage-Model-Core' 'Voyage-JSON-Core') ];
 			package: 'Voyage-UnQLite-Tests';			
 			"utils"
 			package: 'Voyage-Seaside-Container' with: [ spec requires: 'Voyage-Model-Core' ];
@@ -44,7 +44,7 @@ baseline: spec
 	spec for: #'pharo5.x' do: [
 		self tugrik: spec.
 		spec
-			package: 'Voyage-Tugrik-Core' with: [ spec requires: #('Tugrik' 'Voyage-JSON' 'Voyage-Mongo-Core') ];
+			package: 'Voyage-Tugrik-Core' with: [ spec requires: #('Tugrik' 'Voyage-JSON-Core' 'Voyage-Mongo-Core') ];
 			package: 'Voyage-Tugrik-Help' with: [ spec requires: #('Voyage-Tugrik-Core') ];
 			package: 'Voyage-Tugrik-Tests' with: [ spec requires: #('Voyage-Tugrik-Core' 'Voyage-Model-Tests') ];
 			yourself.
@@ -61,9 +61,9 @@ baseline: spec
 					repository: 'github://GsDevKit/Magritte3:v3.?/repository' ].
 		spec 
 			package: 'Voyage-GemStone-JSON';
-			package: 'Voyage-JSON' with: [ spec  requires: #('Voyage-GemStone-JSON')];
-			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON') ];
-			package: 'Voyage-Tugrik-Server-Core' with: [ spec requires: #('Tugrik' 'Voyage-Model-Core' 'Voyage-JSON' 'Voyage-Mongo-JSON')];
+			package: 'Voyage-JSON-Core' with: [ spec  requires: #('Voyage-GemStone-JSON')];
+			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON-Core') ];
+			package: 'Voyage-Tugrik-Server-Core' with: [ spec requires: #('Tugrik' 'Voyage-Model-Core' 'Voyage-JSON-Core' 'Voyage-Mongo-JSON')];
 			yourself.
 		spec
 			group: 'tugrik' with: #('core' 'Voyage-Tugrik-Server-Core');
