@@ -10,5 +10,5 @@
 	"name" : "VOTugrikMaterializerTest",
 	"pools" : [
 		 ],
-	"super" : "VOJSONMaterializerTest",
+	"super" : "VOMongoMaterializerTest",
 	"type" : "normal" }

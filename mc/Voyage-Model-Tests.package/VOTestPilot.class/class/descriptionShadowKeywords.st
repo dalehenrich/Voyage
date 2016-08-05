@@ -1,6 +1,6 @@
 voyage
 descriptionShadowKeywords
-	<voyageDescriptionPlatforms: #(mongo)>
+	<voyageDescriptionPlatforms: #(mongo tugrik)>
 	^VOMongoShadowDescription new
 		accessor: #keywords;
 		attributeName: 'keywords_downcase';

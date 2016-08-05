@@ -10,5 +10,5 @@
 	"name" : "VOTugrikSerializerTest",
 	"pools" : [
 		 ],
-	"super" : "VOJSONSerializerTest",
+	"super" : "VOMongoSerializerTest",
 	"type" : "normal" }
