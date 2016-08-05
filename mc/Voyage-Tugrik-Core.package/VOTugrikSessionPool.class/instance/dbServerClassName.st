@@ -1,3 +1,3 @@
-initialization
+accessing
 dbServerClassName
 	^ dbServerClassName

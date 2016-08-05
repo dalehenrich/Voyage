@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"repository",
-		"pool",
-		"collections",
 		"dbServerClassName" ],
 	"name" : "VOTugrikRepositoryResolver",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "VOMongoRepositoryResolver",
 	"type" : "normal" }

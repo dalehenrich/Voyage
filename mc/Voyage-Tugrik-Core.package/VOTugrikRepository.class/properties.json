@@ -6,16 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"databaseName",
-		"cache",
-		"descriptionBuilder",
-		"resolver",
-		"forceEager",
-		"versionGenerator",
 		"sessionDescription",
 		"dbServerClassName" ],
 	"name" : "VOTugrikRepository",
 	"pools" : [
 		 ],
-	"super" : "VORepository",
+	"super" : "VOMongoRepository",
 	"type" : "normal" }
