@@ -6,7 +6,7 @@ onServerDo: aBlock
 			anObject class isVoyageRoot
 				ifTrue: [ | idObject futures theSerializedObject |
 					idObject := self keyOf: anObject ifAbsent: [ OID nextOID ].
-					futures := self serializer serialize: anObject id: idObject.
+					futures := self newSerializer serialize: anObject id: idObject.
 					resolver
 						futureWithNewVersion: futures first
 						do: [ :id :object :jsonDictionary | 
