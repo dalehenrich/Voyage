@@ -62,7 +62,7 @@ baseline: spec
 			baseline: 'Magritte3' with: [
 				spec
 					loads: #('Core');
-					repository: 'github://GsDevKit/Magritte3:v3.?/repository' ].
+					repository: 'github://GsDevKit/Magritte3:master/repository' ].
 		spec 
 			package: 'Voyage-GemStone-JSON';
 			package: 'Voyage-JSON-Core' with: [ spec  requires: #('Voyage-GemStone-JSON')];
