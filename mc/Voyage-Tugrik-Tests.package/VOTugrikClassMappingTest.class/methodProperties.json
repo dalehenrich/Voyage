@@ -4,4 +4,5 @@
 		"shouldInheritSelectors" : "dkh 7/26/2016 19:30" },
 	"instance" : {
 		"repository" : "dkh 8/4/2016 15:50",
-		"testServerBlock" : "dkh 7/26/2016 19:54" } }
+		"testServerBlock" : "dkh 7/26/2016 19:54",
+		"testServerSideMaterializationSerialization" : "dkh 8/5/2016 15:35" } }
