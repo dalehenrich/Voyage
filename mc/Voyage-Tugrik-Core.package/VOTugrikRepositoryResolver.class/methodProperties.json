@@ -39,7 +39,7 @@
 		"futureInsertOrUpdate:" : "dkh 5/8/2016 11:14",
 		"futureInsertOrUpdate:id:" : "dkh 5/8/2016 11:14",
 		"futureUpdate:" : "dkh 5/8/2016 11:14",
-		"futureWithNewVersion:do:" : "dkh 5/8/2016 12:33",
+		"futureWithNewVersion:do:" : "TravisCI 8/4/2016 17:08",
 		"host" : "dkh 5/8/2016 11:14",
 		"initialize" : "dkh 5/8/2016 11:14",
 		"initialize:" : "dkh 5/8/2016 11:14",
@@ -63,5 +63,5 @@
 		"selectMany:where:limit:offset:" : "dkh 5/8/2016 11:14",
 		"selectMany:where:order:limit:offset:" : "dkh 5/8/2016 11:14",
 		"selectOne:where:" : "dkh 5/8/2016 11:14",
-		"serialize:id:" : "dkh 5/8/2016 11:14",
+		"serialize:id:" : "TravisCI 8/4/2016 17:07",
 		"update:serialized:withId:" : "dkh 5/8/2016 11:14" } }
