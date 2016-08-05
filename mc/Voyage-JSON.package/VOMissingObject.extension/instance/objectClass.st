@@ -1,3 +1,3 @@
-accessing
+*Voyage-JSON
 objectClass 
 	^objectClass
