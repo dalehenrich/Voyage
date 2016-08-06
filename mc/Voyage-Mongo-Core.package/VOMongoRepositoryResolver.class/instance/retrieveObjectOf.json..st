@@ -2,7 +2,7 @@ private
 retrieveObjectOf: aClass json: aDictionary
 	| id cachedVersion retrievedVersion object | 
 	
-	id := aDictionary at: '_id'.
+	id := aDictionary at: VOMongoJSONSerializer fieldRootId.
 	object := self cacheAt: id.
 	cachedVersion := self cacheVersionAt: id.
 	retrievedVersion := aDictionary 
