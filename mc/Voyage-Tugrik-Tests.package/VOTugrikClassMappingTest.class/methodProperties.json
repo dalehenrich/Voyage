@@ -5,4 +5,5 @@
 	"instance" : {
 		"repository" : "dkh 8/4/2016 15:50",
 		"testServerBlock" : "dkh 8/5/2016 19:57",
-		"testServerSideMaterializationSerialization" : "dkh 8/5/2016 19:52" } }
+		"testServerSideMaterializationSerialization" : "dkh 8/6/2016 06:25",
+		"testServerSideObjectStructure" : "dkh 8/6/2016 06:31" } }
