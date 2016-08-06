@@ -4,8 +4,8 @@ keysAndValuesDo: aBlock
 
   aBlock value: '_id' value: self _id.
   self _obj class allInstVarNames
-    do: [ :ivar | 
-      ivar == #'_oidValue'
-        ifFalse: [ aBlock value: ivar asString value: (self _obj instVarNamed: ivar) ] ].
+    do: [ :ivar | aBlock value: ivar asString value: (self _obj instVarNamed: ivar) ].
   self _obj dynamicInstanceVariables
-    do: [ :dynVar | aBlock value: dynVar asString value: (self _obj dynamicInstVarAt: dynVar) ]
+    do: [ :dynVar | 
+      (dynVar == #'_id' or: [ dynVar == #'_wrapper' ])
+        ifFalse: [ aBlock value: dynVar asString value: (self _obj dynamicInstVarAt: dynVar) ] ]
