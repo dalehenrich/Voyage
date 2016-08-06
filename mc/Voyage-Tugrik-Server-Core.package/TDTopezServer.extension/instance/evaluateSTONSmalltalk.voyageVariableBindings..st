@@ -1,12 +1,13 @@
 *voyage-tugrik-server-core
 evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBindingsSTONString
-  | result variableBindings voyageVariableBindings |
+  | result variableBindings voyageVariableBindings wrapperMap |
   voyageVariableBindings := self objectSerializer
     fromString: voyageVariableBindingsSTONString.
   variableBindings := Dictionary new.
+  wrapperMap := IdentityKeyValueDictionary new.
   voyageVariableBindings
     keysAndValuesDo: [ :key :attributeDict | 
-      | voyageObj db dbCollection obj |
+      | voyageWrapper db dbCollection obj |
       obj := attributeDict at: 'serializedObj'.
       attributeDict
         at: 'databaseName'
@@ -14,13 +15,17 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
           db := TugrikDbServer databaseNamed: databaseName.
           dbCollection := db
             collectionNamed: (attributeDict at: 'collectionName').
-          voyageObj := VoyageClassMappingDbCollection
+          voyageWrapper := VoyageClassMappingDbCollection
             visitTugrikObjectFrom: obj
             dbCollection: dbCollection
             ifNew: [ :ignored |  ].
-          variableBindings at: key put: voyageObj ]
+          wrapperMap at: voyageWrapper _obj put: voyageWrapper.
+          variableBindings at: key put: voyageWrapper _obj ]
         ifAbsent: [ variableBindings at: key put: obj ] ].
   result := self
     evaluateSmalltalk: smalltalkSource
     variableBindings: variableBindings.
-  ^ self objectSerializer toString: result
+  ^ wrapperMap
+    at: result
+    ifPresent: [ :wrapper | self objectSerializer toString: wrapper ]
+    ifAbsent: [ self objectSerializer toString: result ]

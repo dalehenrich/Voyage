@@ -33,11 +33,11 @@ visitTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
             yourself ]
         ifFalse: [ VoyageWrapperObject basicNew ].
       obj := instanceClass basicNew.
-      wrapper theObject: obj.
+      wrapper _obj: obj.
       dict
         keysAndValuesDo: [ :key :value | 
           (key ~= self fieldRootId)
-            ifTrue: [ obj dynamicInstVarAt: key asSymbol put: value ];
+            ifTrue: [ wrapper dynamicInstVarAt: key asSymbol put: value ];
             yourself ].
       newBlock value: wrapper ].
-  ^ wrapper theObject
+  ^ wrapper
