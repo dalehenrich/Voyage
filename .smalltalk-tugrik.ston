@@ -15,7 +15,8 @@ SmalltalkCISpec {
   ],
   #testing : {
     #include: {
-      #projects : [ 'Tugrik' ]
+      #projects : [ 'Tugrik' ],
+      #classes : [ #SentButNotImplementedTest, #UndefinedSymbolsTest ]
     }
   },
   #configuring : [
