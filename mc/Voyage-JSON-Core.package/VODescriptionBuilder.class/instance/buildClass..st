@@ -5,4 +5,4 @@ buildClass: aClass
 	container :=  self buildContainerFor: aClass.	
 	^ container 
 		addAll: (self buildDescriptionsFor: aClass inContainer: container);
-		yourself  
+		yourself

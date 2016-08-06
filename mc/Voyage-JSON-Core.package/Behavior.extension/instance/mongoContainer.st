@@ -2,4 +2,4 @@
 mongoContainer 
 	<mongoContainer>
 	
-	^VOReferenceContainer new 
+	^VOReferenceContainer new

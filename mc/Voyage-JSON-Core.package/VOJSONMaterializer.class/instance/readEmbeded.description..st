@@ -4,4 +4,4 @@ readEmbeded: aDictionary description: aDescription
 		materialize: (self 
 			objectFromJSON: aDictionary 
 			orDescription: aDescription)
-		fromJSON: aDictionary 
+		fromJSON: aDictionary
