@@ -1,4 +1,4 @@
-utility
+object creation
 createTugrikObjectFrom: dict dbCollection: aTugrikDbCollection ifNew: newBlock
   | wrapper hasOid theOid query instanceClass |
   hasOid := false.

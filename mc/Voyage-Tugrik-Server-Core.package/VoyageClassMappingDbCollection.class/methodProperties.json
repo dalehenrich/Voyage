@@ -1,8 +1,15 @@
 {
 	"class" : {
 		"createTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/05/2016 19:42",
+		"fieldCollection" : "dkh 08/06/2016 12:16",
+		"fieldId" : "dkh 08/06/2016 12:18",
 		"fieldRootId" : "dkh 08/05/2016 15:22",
 		"fieldType" : "dkh 08/05/2016 15:21",
-		"materializerClass" : "dkh 08/05/2016 15:21" },
+		"findOrCreateObjectOf:dbCollection:json:ifNew:" : "dkh 08/06/2016 14:20",
+		"findOrCreateTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/06/2016 13:20",
+		"materialize:fromJSON:dbCollection:" : "dkh 08/06/2016 13:53",
+		"materializerClass" : "dkh 08/05/2016 15:21",
+		"retrieveClassOf:json:" : "dkh 08/06/2016 13:10" },
 	"instance" : {
-		 } }
+		"descriptionBuilder" : "dkh 08/06/2016 14:09",
+		"platformIdentifier" : "dkh 08/06/2016 13:57" } }

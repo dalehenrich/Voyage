@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"descriptionBuilder" ],
-	"name" : "VoyageClassMappingDbCollection",
+		 ],
+	"name" : "VOGemStoneDescriptionBuilder",
 	"pools" : [
 		 ],
-	"super" : "TugrikDbCollection",
+	"super" : "VODescriptionBuilder",
 	"type" : "normal" }

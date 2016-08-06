@@ -1,0 +1,3 @@
+magritte
+platformIdentifier
+  ^ #'tugrik'
