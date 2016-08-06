@@ -1,8 +1,9 @@
 language: smalltalk
 sudo: false
-os:
-  - linux
+os: linux
+#  - linux
 #  - osx
+
 services: 
   - mongodb
 smalltalk:
@@ -25,6 +26,6 @@ matrix:
   allow_failures:
     - smalltalk_config: .smalltalk-unqlite.ston
 
-branches:
-  except:
-    - classmapper
+#branches:
+#  except:
+#    - classmapper
