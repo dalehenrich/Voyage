@@ -14,15 +14,15 @@ smalltalk:
 smalltalk_config: .smalltalk.ston
 matrix:
   include:
+    - smalltalk: GemStone-3.3.1
+      smalltalk_config: .smalltalk-tugrik.ston
+      env: GSCI_CLIENTS="Pharo-5.0"
     - smalltalk: Pharo-6.0
       before_script: wget https://raw.githubusercontent.com/pharo-nosql/PunQLite/master/binary/linux/unqlite.so
       smalltalk_config: .smalltalk-unqlite.ston
     - smalltalk: Pharo-5.0
       before_script: wget https://raw.githubusercontent.com/pharo-nosql/PunQLite/master/binary/linux/unqlite.so
       smalltalk_config: .smalltalk-unqlite.ston
-    - smalltalk: GemStone-3.3.1
-      smalltalk_config: .smalltalk-tugrik.ston
-      env: GSCI_CLIENTS="Pharo-5.0"
   allow_failures:
     - smalltalk_config: .smalltalk-unqlite.ston
 
