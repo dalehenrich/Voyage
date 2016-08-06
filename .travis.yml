@@ -26,6 +26,10 @@ matrix:
   allow_failures:
     - smalltalk_config: .smalltalk-unqlite.ston
 
+cache:
+  directories:
+    - $SMALLTALK_CI_CACHE
+
 #branches:
 #  except:
 #    - classmapper
