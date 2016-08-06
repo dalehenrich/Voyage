@@ -72,5 +72,5 @@ baseline: spec
 			yourself.
 		spec
 			group: 'tugrik' with: #('core' 'Voyage-Tugrik-Server-Core');
-			group: 'tugrik tests' with: #('tugrik' 'Voyage-Tugrik-Server-Tests');
+			group: 'tugrik tests' with: #('core tests' 'tugrik' 'Voyage-Tugrik-Server-Tests');
 			yourself ]
