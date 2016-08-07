@@ -1,4 +1,4 @@
-object creation
+materialization
 retrieveClassOf: aClass json: aDictionary
   | retrievedClass |
   aDictionary

@@ -1,3 +1,3 @@
-object creation
+materialization
 materializerClass
   ^ VOJSONMaterializer

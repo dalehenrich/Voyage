@@ -1,4 +1,4 @@
-object creation
+materialization
 findOrCreateTugrikObjectFrom: aDictionary dbCollection: aTugrikDbCollection ifNew: newBlock
   "find an existing object with given oid or create a new object with given oid"
 

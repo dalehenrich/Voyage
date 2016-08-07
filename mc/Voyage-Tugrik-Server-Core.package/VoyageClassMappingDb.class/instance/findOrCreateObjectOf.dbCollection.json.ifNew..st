@@ -1,4 +1,4 @@
-object creation
+materialization
 findOrCreateObjectOf: objectClass dbCollection: aTugrikDbCollection json: aDictionary ifNew: newBlock
   | oid object theWrapper |
   oid := aDictionary
