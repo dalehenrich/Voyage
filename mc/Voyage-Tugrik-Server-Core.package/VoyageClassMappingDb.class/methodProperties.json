@@ -10,7 +10,7 @@
 		"fieldType" : "dkh 08/07/2016 15:01",
 		"findOrCreateObjectOf:dbCollection:json:ifNew:" : "dkh 08/07/2016 15:01",
 		"findOrCreateTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/07/2016 15:02",
-		"materialize:fromJSON:dbCollection:" : "dkh 08/07/2016 15:02",
+		"materialize:fromJSON:dbCollection:" : "dkh 08/07/2016 15:12",
 		"materializerClass" : "dkh 08/07/2016 15:02",
 		"platformIdentifier" : "dkh 08/07/2016 15:02",
 		"retrieveClassOf:json:" : "dkh 08/07/2016 15:02" } }
