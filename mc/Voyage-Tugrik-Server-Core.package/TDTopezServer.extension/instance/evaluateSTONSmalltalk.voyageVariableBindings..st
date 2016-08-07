@@ -14,7 +14,7 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
           db := TugrikDbServer databaseNamed: databaseName.
           dbCollection := db
             collectionNamed: (attributeDict at: 'collectionName').
-          voyageWrapper := dbCollection class
+          voyageWrapper := dbCollection
             findOrCreateTugrikObjectFrom: obj
             dbCollection: dbCollection
             ifNew: [ :ignored |  ].

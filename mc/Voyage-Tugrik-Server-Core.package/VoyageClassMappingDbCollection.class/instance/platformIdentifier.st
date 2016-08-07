@@ -1,3 +1,3 @@
-magritte
+object creation
 platformIdentifier
   ^ #'tugrik'

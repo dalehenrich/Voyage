@@ -8,7 +8,7 @@ findOrCreateTugrikObjectFrom: aDictionary dbCollection: aTugrikDbCollection ifNe
     ifAbsent: [ 
       "no field type - will have to create a generic object"
       ^ super
-        createTugrikObjectFrom: aDictionary
+        findOrCreateTugrikObjectFrom: aDictionary
         dbCollection: aTugrikDbCollection
         ifNew: newBlock ].
   objectClass := Smalltalk
@@ -16,7 +16,7 @@ findOrCreateTugrikObjectFrom: aDictionary dbCollection: aTugrikDbCollection ifNe
     ifAbsent: [ 
       "class not found, will have to create a generic object"
       ^ super
-        createTugrikObjectFrom: aDictionary
+        findOrCreateTugrikObjectFrom: aDictionary
         dbCollection: aTugrikDbCollection
         ifNew: newBlock ].
   ^ self
