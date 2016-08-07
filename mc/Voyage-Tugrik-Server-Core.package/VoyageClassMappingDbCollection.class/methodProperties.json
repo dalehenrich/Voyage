@@ -2,14 +2,4 @@
 	"class" : {
 		 },
 	"instance" : {
-		"descriptionBuilder" : "dkh 08/06/2016 14:09",
-		"fieldCollection" : "dkh 08/07/2016 14:06",
-		"fieldId" : "dkh 08/07/2016 14:07",
-		"fieldRootId" : "dkh 08/07/2016 14:07",
-		"fieldType" : "dkh 08/07/2016 14:07",
-		"findOrCreateObjectOf:dbCollection:json:ifNew:" : "dkh 08/07/2016 14:03",
-		"findOrCreateTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/07/2016 14:03",
-		"materialize:fromJSON:dbCollection:" : "dkh 08/07/2016 14:07",
-		"materializerClass" : "dkh 08/07/2016 14:07",
-		"platformIdentifier" : "dkh 08/06/2016 13:57",
-		"retrieveClassOf:json:" : "dkh 08/07/2016 14:07" } }
+		 } }
