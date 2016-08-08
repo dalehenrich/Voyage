@@ -1,10 +1,13 @@
 tests
 testServerSideMaterializationSerialization
-	| pilot  answer |
+	| pilot answer ar |
 	pilot := VOTestPilot new
 		name: 'Pilot1';
 		yourself.
-	answer := [ pilot ] voyageDoOnServer: self repository.
+	ar := [ {pilot.
+	(pilot class == VOTestPilot)} ] voyageDoOnServer: self repository.
+	answer := ar at: 1.
+	self assert: (ar at: 2).
 	self assert: answer class == VOTestPilot.
 	self assert: answer name = pilot name.
 	self assert: answer == pilot

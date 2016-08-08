@@ -4,6 +4,8 @@
 		"shouldInheritSelectors" : "dkh 7/26/2016 19:30" },
 	"instance" : {
 		"repository" : "dkh 8/4/2016 15:50",
-		"testServerBlock" : "dkh 8/5/2016 19:57",
-		"testServerSideMaterializationSerialization" : "dkh 8/6/2016 06:25",
+		"testServerBlock01" : "dkh 8/8/2016 10:28",
+		"testServerBlock01Forwarding" : "dkh 8/8/2016 11:09",
+		"testServerBlock02" : "dkh 8/8/2016 10:28",
+		"testServerSideMaterializationSerialization" : "dkh 8/8/2016 10:29",
 		"testServerSideObjectStructure" : "dkh 8/6/2016 06:31" } }
