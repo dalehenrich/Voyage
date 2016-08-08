@@ -1,4 +1,4 @@
 private
 keyOf: anObject
-  ^ (self repository idOf: anObject)
+  ^ (anObject dynamicInstVarAt: self class fieldWrapperSymbol)
     ifNil: [ VOError signal: 'Invalid reference' ]
