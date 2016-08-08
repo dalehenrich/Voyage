@@ -1,3 +1,3 @@
 materialization
 materializerClass
-  ^ VOJSONMaterializer
+  ^ VOTugrikJSONMaterializer

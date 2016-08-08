@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"collectionNameFor:" : "dkh 08/08/2016 14:10",
 		"dbCollectionClass" : "dkh 07/25/2016 13:56",
 		"descriptionBuilder" : "dkh 08/07/2016 15:00",
 		"fieldCollection" : "dkh 08/07/2016 15:00",
@@ -12,9 +13,10 @@
 		"findOrCreateTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/08/2016 06:22",
 		"futureClass" : "dkh 08/08/2016 06:07",
 		"materialize:fromJSON:dbCollection:" : "dkh 08/07/2016 15:12",
-		"materializerClass" : "dkh 08/07/2016 15:02",
+		"materializerClass" : "dkh 08/08/2016 13:57",
 		"newSerializer" : "dkh 08/08/2016 06:22",
 		"platformIdentifier" : "dkh 08/07/2016 15:02",
 		"retrieveClassOf:json:" : "dkh 08/07/2016 15:02",
+		"selectOne:where:" : "dkh 08/08/2016 14:42",
 		"serialize:using:" : "dkh 08/08/2016 07:09",
 		"serializeRootObject:" : "dkh 08/08/2016 10:56" } }
