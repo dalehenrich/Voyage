@@ -3,8 +3,8 @@ serializeRootObject: anObject
   "Objects that are persisted with Voyage will have a _wrapper dynamic inst var"
 
   | futures |
-  anObject isTypePersistent
-    ifFalse: [ ^ anObject ].
+  (anObject isTypeWrapper not and: [ anObject isTypePersistent not ])
+    ifTrue: [ ^ anObject ].
   futures := self newSerializer
     serialize: anObject
     id:
