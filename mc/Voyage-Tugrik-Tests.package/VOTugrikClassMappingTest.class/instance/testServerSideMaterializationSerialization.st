@@ -5,7 +5,8 @@ testServerSideMaterializationSerialization
 		name: 'Pilot1';
 		yourself.
 	ar := [ {pilot.
-	(pilot class == VOTestPilot)} ] voyageDoOnServer: self repository.
+	(pilot class == VOTestPilot).
+	pilot class name} ] voyageDoOnServer: self repository.
 	answer := ar at: 1.
 	self assert: (ar at: 2).
 	self assert: answer class == VOTestPilot.
