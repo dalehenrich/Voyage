@@ -23,7 +23,6 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
   result := self
     evaluateSmalltalk: smalltalkSource
     variableBindings: variableBindings.
-  self halt.
   db
     ifNil: [ 
       "probably should make databaseName an explicit argument to this method"

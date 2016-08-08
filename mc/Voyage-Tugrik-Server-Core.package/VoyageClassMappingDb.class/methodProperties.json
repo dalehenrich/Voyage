@@ -9,10 +9,12 @@
 		"fieldRootId" : "dkh 08/07/2016 15:01",
 		"fieldType" : "dkh 08/07/2016 15:01",
 		"findOrCreateObjectOf:dbCollection:json:ifNew:" : "dkh 08/07/2016 15:01",
-		"findOrCreateTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/07/2016 15:02",
+		"findOrCreateTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/08/2016 06:22",
+		"futureClass" : "dkh 08/08/2016 06:07",
 		"materialize:fromJSON:dbCollection:" : "dkh 08/07/2016 15:12",
 		"materializerClass" : "dkh 08/07/2016 15:02",
+		"newSerializer" : "dkh 08/08/2016 06:22",
 		"platformIdentifier" : "dkh 08/07/2016 15:02",
 		"retrieveClassOf:json:" : "dkh 08/07/2016 15:02",
-		"serialize:idObject:using:" : "dkh 08/07/2016 20:50",
-		"serialize:using:" : "dkh 08/07/2016 20:48" } }
+		"serialize:using:" : "dkh 08/08/2016 07:09",
+		"serializeRootObject:" : "dkh 08/08/2016 07:09" } }

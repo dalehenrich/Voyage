@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 08/08/2016 06:21",
+	"instvars" : [
+		 ],
+	"name" : "VOTugrikJSONSerializer",
+	"pools" : [
+		 ],
+	"super" : "VOJSONSerializer",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
 accessing
 _obj: anObject
-  anObject dynamicInstVarAt: #'_wrapper' put: self.
+  anObject dynamicInstVarAt: VOTugrikJSONSerializer fieldWrapperSymbol put: self.
   _obj := anObject

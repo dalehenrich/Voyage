@@ -4,7 +4,7 @@ findOrCreateTugrikObjectFrom: aDictionary dbCollection: aTugrikDbCollection ifNe
 
   | type objectClass |
   type := aDictionary
-    at: VOMongoJSONSerializer fieldType
+    at: VOTugrikJSONSerializer fieldType
     ifAbsent: [ 
       "no field type - will have to create a generic object"
       ^ super
@@ -12,7 +12,7 @@ findOrCreateTugrikObjectFrom: aDictionary dbCollection: aTugrikDbCollection ifNe
         dbCollection: aTugrikDbCollection
         ifNew: newBlock ].
   objectClass := Smalltalk
-    at: (aDictionary at: VOMongoJSONSerializer fieldType) asSymbol
+    at: (aDictionary at: VOTugrikJSONSerializer fieldType) asSymbol
     ifAbsent: [ 
       "class not found, will have to create a generic object"
       ^ super

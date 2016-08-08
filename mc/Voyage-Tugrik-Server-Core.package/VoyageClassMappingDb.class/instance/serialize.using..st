@@ -1,12 +1,7 @@
 serialization
-serialize: aWrapperOrObject using: wireSerializer
-  "  ^ (result dynamicInstVarAt: #'_wrapper')
-    ifNil: [ self objectSerializer toString: result ]
-    ifNotNil: [ :wrapper | self objectSerializer toString: wrapper ]"
-
-  aWrapperOrObject isVoyageRoot
-    ifFalse: [ ^ wireSerializer toString: aWrapperOrObject ].
-  ^ self newSerializer
-    serialize: aWrapperOrObject
-    id: (aWrapperOrObject dynamicInstVarAt: #'_wrapper') _id
-    using: wireSerializer
+serialize: anObject using: wireSerializer
+  | serialized |
+  serialized := anObject isCollection
+    ifTrue: [ anObject collect: [ :each | self serializeRootObject: each ] ]
+    ifFalse: [ self serializeRootObject: anObject ].
+  ^ wireSerializer toString: serialized
