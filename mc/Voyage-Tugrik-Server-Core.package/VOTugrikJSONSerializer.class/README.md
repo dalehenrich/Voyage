@@ -1,1 +1,1 @@
-I'm a serializer  from obejct to mongo documents. 
+I'm a serializer from gemstone objects to mongo documents (dictionaries). 
