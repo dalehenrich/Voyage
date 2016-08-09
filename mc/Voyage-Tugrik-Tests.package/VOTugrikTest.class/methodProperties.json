@@ -8,4 +8,5 @@
 		"repository2" : "dkh 8/4/2016 15:50",
 		"tearDown" : "TravisCI 7/23/2016 06:21",
 		"testBasicServerBlock" : "dkh 7/26/2016 19:51",
+		"testEmbeddedRootObjectRefs" : "dkh 8/8/2016 21:51",
 		"testRemoveAll" : "dkh 5/14/2016 11:11" } }
