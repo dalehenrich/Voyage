@@ -6,7 +6,8 @@
 		"testCrossImageRootUpdates" : "TravisCI 8/4/2016 16:49",
 		"testEmbeddedRootObjectRefs01" : "dkh 8/8/2016 22:50",
 		"testEmbeddedRootObjectRefs02" : "dkh 8/8/2016 23:26",
-		"testEmbeddedRootObjectRefs03" : "dkh 8/8/2016 23:25",
+		"testEmbeddedRootObjectRefs03" : "dkh 8/8/2016 23:45",
+		"testEmbeddedRootObjectRefs04" : "dkh 8/8/2016 23:44",
 		"testNonRootEmbeddedObjectSharing" : "dkh 7/30/2016 12:03",
 		"testSelectManyWithAllKeyword_1" : "dkh 5/9/2016 16:12",
 		"testSelectManyWithAllKeyword_2" : "dkh 5/9/2016 16:13" } }

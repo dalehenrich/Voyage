@@ -19,5 +19,5 @@ testServerSideObjectStructure04
 	(serverPet == pet)} ] voyageDoOnServer: self repository.
 	self assert: (ar at: 1) == pet.
 	3 to: ar size do: [ :index | self assert: (ar at: index) ].
-	embeddedPet := (ar at: 2) at: 1.
+	embeddedPet := ((ar at: 2) at: 1) yourself.
 	self assert: embeddedPet == pet
