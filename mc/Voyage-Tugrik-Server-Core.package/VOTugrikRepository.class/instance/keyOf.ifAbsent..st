@@ -1,3 +1,3 @@
 accessing
 keyOf: anObject ifAbsent: absentBlock
-  ^ (anObject dynamicInstVarAt: #'_id') ifNil: absentBlock
+  ^ (anObject dynamicInstVarAt: self db fieldRootIdSymbol) ifNil: absentBlock

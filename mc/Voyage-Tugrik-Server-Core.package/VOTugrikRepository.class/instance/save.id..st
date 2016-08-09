@@ -1,9 +1,19 @@
 persistence
 save: anObject id: idObject
-  | db collectionName data |
-  idObject ifNotNil: [ ^ self ].
-  TugrikDbServer
-    transact: [ 
-      db := TugrikDbServer databaseNamed: self databaseName.
-      collectionName := self collectionNameFor: anObject class.
-      db insertOperation: -1 collectionName: collectionName data: data ]
+  | db collectionName dbCollection wrapper theOid |
+  db := self db.
+  collectionName := db collectionNameFor: anObject class.
+  dbCollection := db collectionNamed: collectionName.
+  theOid := idObject
+    ifNotNil: [ :oid | 
+      (dbCollection objWithOid: oid ifAbsent: [  ])
+        ifNotNil: [ :existingWrapper | ^ existingWrapper ].
+      oid ]
+    ifNil: [ OID nextOID ].
+  wrapper := (anObject dynamicInstVarAt: db fieldWrapperSymbol)
+    ifNil: [ 
+      VoyageWrapperObject new
+        _id: theOid;
+        _obj: anObject;
+        yourself ].
+  dbCollection add: wrapper

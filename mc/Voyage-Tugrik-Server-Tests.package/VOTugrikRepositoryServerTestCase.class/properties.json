@@ -10,5 +10,5 @@
 	"name" : "VOTugrikRepositoryServerTestCase",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "VORepositoryTest",
 	"type" : "normal" }

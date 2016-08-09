@@ -1,3 +1,4 @@
 running
 tearDown
-  super tearDown
+  super tearDown.
+  self repository dropDatabase
