@@ -1,3 +1,3 @@
 *voyage-tugrik-server-core
 voyageSelectCollectionFor: collectionDb
-  self halt
+  ^ collectionDb selectCollection: self asMongoQuery
