@@ -68,12 +68,12 @@ baseline: spec
 					loads: #('Core' 'Tests');
 					repository: 'github://pharo-nosql/mongotalk:tugrik/mc';
 					yourself ];
-			yourself..
+			yourself.
 		spec 
 			package: 'Voyage-GemStone-JSON';
 			package: 'Voyage-JSON-Core' with: [ spec  requires: #('Voyage-GemStone-JSON')];
 			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON-Core') ];
-			package: 'Voyage-Tugrik-Server-Core' with: [ spec requires: #('Tugrik' 'Voyage-Model-Core' 'Voyage-JSON-Core' 'Voyage-Mongo-JSON' MongoTalk)];
+			package: 'Voyage-Tugrik-Server-Core' with: [ spec requires: #('Tugrik' 'Voyage-Model-Core' 'Voyage-JSON-Core' 'Voyage-Mongo-JSON' 'MongoTalk')];
 			package: 'Voyage-Tugrik-Server-Tests' with: [ spec requires: #('Voyage-Tugrik-Server-Core')];
 			yourself.
 		spec
