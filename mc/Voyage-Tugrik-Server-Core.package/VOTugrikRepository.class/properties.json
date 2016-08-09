@@ -8,7 +8,8 @@
 	"instvars" : [
 		"databaseName",
 		"dbServerClassName",
-		"versionGenerator" ],
+		"versionGenerator",
+		"descriptionBuilder" ],
 	"name" : "VOTugrikRepository",
 	"pools" : [
 		 ],
