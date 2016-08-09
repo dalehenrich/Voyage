@@ -1,3 +1,3 @@
 accessing
 idOf: anObject
-  ^ self keyOf: anObject
+  ^ self db idOf: anObject

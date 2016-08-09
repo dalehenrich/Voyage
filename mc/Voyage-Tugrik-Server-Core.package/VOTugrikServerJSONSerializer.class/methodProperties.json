@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addSpecialAttributesFrom:description:" : "dkh 08/09/2016 13:19",
+		"rawCollection:description:" : "dkh 08/09/2016 13:22",
+		"rawDictionary:description:" : "dkh 08/09/2016 13:22",
+		"rawEmbeded:description:" : "dkh 08/09/2016 13:23",
+		"rawFuture:" : "dkh 08/09/2016 13:25",
+		"rawReference:description:" : "dkh 08/09/2016 13:24",
+		"rawSerialize:description:" : "dkh 08/09/2016 13:26",
+		"rawWrapper:description:" : "dkh 08/09/2016 13:26",
+		"serialize:description:" : "dkh 08/09/2016 14:20",
+		"serialize:description:id:" : "dkh 08/09/2016 13:39",
+		"serialize:id:" : "dkh 08/09/2016 13:38",
+		"visitShadowDescription:" : "dkh 08/09/2016 13:28",
+		"visitToManyDescription:" : "dkh 08/09/2016 13:29",
+		"visitToOneDescription:" : "dkh 08/09/2016 13:29" } }
