@@ -1,4 +1,6 @@
 private
 keyOf: anObject
-  ^ (anObject dynamicInstVarAt: self class fieldWrapperSymbol)
-    ifNil: [ VOError signal: 'Invalid reference' ]
+  | wrapper |
+  wrapper := (anObject dynamicInstVarAt: self class fieldWrapperSymbol)
+    ifNil: [ VOError signal: 'Invalid reference' ].
+  ^ wrapper _id

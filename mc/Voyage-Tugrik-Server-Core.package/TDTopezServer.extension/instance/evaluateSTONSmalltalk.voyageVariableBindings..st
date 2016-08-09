@@ -28,4 +28,4 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
       "probably should make databaseName an explicit argument to this method"
       "https://github.com/dalehenrich/voyage/issues/7"
       ^ self objectSerializer toString: result ].
-  ^ db serialize: result using: self objectSerializer
+  ^ db serializeResult: result using: self objectSerializer
