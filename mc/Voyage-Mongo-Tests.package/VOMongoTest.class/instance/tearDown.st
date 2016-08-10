@@ -6,6 +6,7 @@ tearDown
 	self repository
 		removeAll: VOTestPet;
 		removeAll: VOTestPilot;
+		removeAll: VOTestOwner;
 		flush.
 	Smalltalk garbageCollect.
 
