@@ -4,7 +4,6 @@
 		"repository:" : "EstebanLorenzano 6/13/2016 17:59" },
 	"instance" : {
 		"build:" : "EstebanLorenzano 6/13/2016 17:44",
-		"build:in:" : "EstebanLorenzano 6/13/2016 18:05",
 		"buildClass:" : "EstebanLorenzano 6/13/2016 17:38",
 		"buildContainer:in:" : "EstebanLorenzano 6/13/2016 16:09",
 		"buildContainerFor:" : "EstebanLorenzano 6/13/2016 18:07",
@@ -12,7 +11,6 @@
 		"buildDirectAccessorFor:" : "ub 5/2/2014 12:32",
 		"buildInfered:" : "EstebanLorenzano 6/13/2016 16:01",
 		"buildInferedContainer:" : "EstebanLorenzano 6/13/2016 15:41",
-		"collectContainerPragmasFor:" : "EstebanLorenzano 6/13/2016 17:47",
 		"collectContainerPragmasFrom:to:" : "EstebanLorenzano 6/13/2016 17:43",
 		"collectPragmasFrom:to:" : "EstebanLorenzano 6/13/2016 17:37",
 		"collectionNameFor:" : "MarianoMartinezPeck 1/8/2013 16:41",

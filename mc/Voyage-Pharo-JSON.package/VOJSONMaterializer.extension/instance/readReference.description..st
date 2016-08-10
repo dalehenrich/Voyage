@@ -1,4 +1,4 @@
-private
+*Voyage-Pharo-JSON
 readReference: jsonDictionary description: aDescription
 	| objectClass |
 	objectClass := self classFromJSON: jsonDictionary orDescription: aDescription.
