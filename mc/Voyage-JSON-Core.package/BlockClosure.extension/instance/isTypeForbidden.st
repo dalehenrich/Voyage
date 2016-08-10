@@ -1,3 +1,3 @@
-*Voyage-Pharo-JSON
+*Voyage-JSON-Core
 isTypeForbidden 
 	^ true

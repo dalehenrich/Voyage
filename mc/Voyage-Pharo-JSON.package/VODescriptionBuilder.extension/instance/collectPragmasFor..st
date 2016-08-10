@@ -1,4 +1,4 @@
-private
+*Voyage-Pharo-JSON
 collectPragmasFor: aClass
   ^ aClass isMeta
     ifTrue: [ self collectPragmasFrom: Metaclass to: Behavior ]

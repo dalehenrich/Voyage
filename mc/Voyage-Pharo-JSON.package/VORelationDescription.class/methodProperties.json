@@ -1,5 +1,9 @@
 {
 	"class" : {
-		 },
+		"defaultKindCollection" : "" },
 	"instance" : {
-		 } }
+		"convertNull" : "",
+		"convertNullTo:" : "",
+		"convertNullToEmpty" : "",
+		"kindCollection" : "",
+		"kindCollection:" : "" } }

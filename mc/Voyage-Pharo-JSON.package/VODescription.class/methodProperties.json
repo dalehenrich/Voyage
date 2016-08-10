@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"postLoad" : "",
+		"postLoad:" : "" } }
