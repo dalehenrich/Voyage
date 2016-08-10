@@ -16,7 +16,7 @@ matrix:
   include:
     - smalltalk: GemStone-3.3.1
       smalltalk_config: .smalltalk-tugrik.ston
-      env: GSCI_CLIENTS="Pharo-5.0"
+      env: GSCI_CLIENTS="Pharo-5.0 Pharo-6.0"
       cache:
         directories:
           - $SMALLTALK_CI_CACHE
