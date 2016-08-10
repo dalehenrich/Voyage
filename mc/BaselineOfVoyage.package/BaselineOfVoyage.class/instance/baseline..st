@@ -45,7 +45,7 @@ baseline: spec
 			group: 'mongo tests' with: #('mongo' 'core tests' 'Voyage-Mongo-Tests');
 			group: 'unqlite' with: #( 'Voyage-UnQLite');
 			group: 'unqlite tests' with: #('unqlite' 'core tests' 'Voyage-UnQLite-Tests') ].
-	spec for: #'pharo5.x' do: [
+	spec for: #( #'pharo5.x' #'pharo6.x') do: [
 		self tugrik: spec.
 		spec
 			package: 'Voyage-Tugrik-Core' with: [ spec requires: #('Tugrik' 'Voyage-JSON-Core' 'Voyage-Mongo-Core') ];
