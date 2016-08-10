@@ -10,6 +10,8 @@
 		"fieldRootId" : "dkh 08/07/2016 15:01",
 		"fieldRootIdSymbol" : "dkh 08/09/2016 10:05",
 		"fieldType" : "dkh 08/07/2016 15:01",
+		"fieldVersion" : "dkh 08/09/2016 17:45",
+		"fieldVersionSymbol" : "dkh 08/09/2016 17:49",
 		"fieldWrapperSymbol" : "dkh 08/09/2016 10:00",
 		"findOrCreateObjectOf:dbCollection:json:ifNew:" : "dkh 08/07/2016 15:01",
 		"findOrCreateTugrikObjectFrom:dbCollection:ifNew:" : "dkh 08/08/2016 06:22",

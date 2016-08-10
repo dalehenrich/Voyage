@@ -9,6 +9,9 @@ save: anObject
     do: [ :future | 
       | realObject futureId |
       realObject := future realObject.
+      realObject
+        dynamicInstVarAt: db fieldVersionSymbol
+        put: self versionGenerator newVersion.
       collectionName := db collectionNameFor: realObject class.
       dbCollection := db collectionNamed: collectionName.
       futureId := future futureId.

@@ -1,0 +1,3 @@
+materialization
+fieldVersionSymbol
+  ^ self materializerClass fieldVersionSymbol
