@@ -1,4 +1,4 @@
-private building
+*Voyage-Pharo-JSON
 buildContainer: aPragma in: aClass
 	| description |
 	
