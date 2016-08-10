@@ -6,7 +6,13 @@ findOrCreateObjectOf: objectClass dbCollection: aTugrikDbCollection json: aDicti
     ifPresent: [ :anOid | 
       (aTugrikDbCollection objWithOid: anOid ifAbsent: [  ])
         ifNotNil: [ :wrapper | 
-          "found the object, mission accomplished"
+          wrapper _isPartial
+            ifTrue: [ 
+              self
+                materialize: wrapper _obj
+                fromJSON: aDictionary
+                dbCollection: aTugrikDbCollection.
+              wrapper _isPartial: false ].
           ^ wrapper ].
       anOid ]
     ifAbsent: [ OID nextOID ].

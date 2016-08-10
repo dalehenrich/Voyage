@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"_obj" ],
+		"_obj",
+		"_isPartial" ],
 	"name" : "VoyageWrapperObject",
 	"pools" : [
 		 ],

@@ -21,7 +21,17 @@ createExampleCollection
     at: #'contents' put: self voyageServerBlockQueryExample;
     yourself).
   (Dictionary new
-    at: #'name' put: 'Voyage Server Block Scoping';
+    at: #'name' put: 'Voyage Switch to Class Mapping';
     at: #'order' put: 15;
-    at: #'contents' put: self voyageServerBlockScopingExample;
+    at: #'contents' put: self voyageSwitchToClassMapping;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Voyage Server Block Scoping I';
+    at: #'order' put: 20;
+    at: #'contents' put: self voyageServerBlockScopingExample01;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Voyage Server Block Scoping II';
+    at: #'order' put: 25;
+    at: #'contents' put: self voyageServerBlockScopingExample02;
     yourself)} do: [ :dict | self doInsert: dict ]
