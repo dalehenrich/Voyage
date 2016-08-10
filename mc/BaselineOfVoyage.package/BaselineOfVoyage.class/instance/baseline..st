@@ -25,7 +25,7 @@ baseline: spec
 			package: 'Voyage-Pharo-Model-Tests' with: [ spec requires: 'Voyage-Pharo-Model-Core' ];
 			package: 'Voyage-Memory-Core' with: [ spec requires: 'Voyage-Model-Core' ];
 			package: 'Voyage-Pharo-JSON' with: [ spec requires: #('Voyage-JSON-Core') ];
-			package: 'Voyage-Pharo-Classes-JSON';
+			package: 'Voyage-Pharo-Classes-JSON' with: [ spec requires: #('Magritte3')];
 			package: 'Voyage-JSON-Core' with: [ 
 				spec 
 					requires: #('Voyage-Pharo-Classes-JSON');
