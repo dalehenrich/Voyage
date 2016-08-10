@@ -66,7 +66,7 @@ baseline: spec
 			baseline: 'MongoTalk' with: [ 
 				spec 
 					loads: #('Core' 'Tests');
-					repository: 'github://pharo-nosql/mongotalk:tugrik/mc';
+					repository: 'github://dalehenrich/mongotalk:tugrik/mc';
 					yourself ];
 			yourself.
 		spec 
