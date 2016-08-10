@@ -1,4 +1,4 @@
-tests
+*Voyage-Tugrik-Tests
 testSaveCircularDictionaryWhere
 	| owner |
 	owner := VOTestOwner new
