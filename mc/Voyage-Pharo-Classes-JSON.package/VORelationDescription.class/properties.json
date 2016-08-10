@@ -1,5 +1,5 @@
 {
-	"category" : "Voyage-Pharo-JSON-Magritte",
+	"category" : "Voyage-Pharo-Classes-JSON",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TVOManyRelation classTrait",

@@ -1,5 +1,5 @@
 {
-	"category" : "Voyage-Pharo-JSON-Magritte",
+	"category" : "Voyage-Pharo-Classes-JSON",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TVOPostLoad classTrait",
@@ -8,9 +8,9 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "VODescription",
+	"name" : "VOContainer",
 	"pools" : [
 		 ],
-	"super" : "MADescription",
+	"super" : "MAContainer",
 	"traitcomposition" : "TVOPostLoad",
 	"type" : "normal" }
