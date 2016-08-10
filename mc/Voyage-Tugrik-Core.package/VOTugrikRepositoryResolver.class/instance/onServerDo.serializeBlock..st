@@ -2,8 +2,11 @@ server blocks
 onServerDo: aBlock serializeBlock: serializeBlock
 	self pool
 		withSession: [ :tugrik | 
-			| json |
-			json := tugrik onVoyageServerDo: aBlock serializeBlock: serializeBlock.
+			| json variableBindings |
+			 variableBindings := Dictionary new.
+			variableBindings at: '#databaseName'  put: self databaseName.
+			variableBindings at: '#dbServerClassName'  put: self dbServerClassName.
+			json := tugrik onVoyageServerDo: aBlock serializeBlock: serializeBlock variableBindings: variableBindings.
 			json isCollection
 				ifFalse: [ ^ json ].
 			^ json isDictionary

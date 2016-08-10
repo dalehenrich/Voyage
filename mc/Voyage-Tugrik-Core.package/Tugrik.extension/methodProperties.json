@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"onVoyageServerDo:serializeBlock:" : "dkh 7/26/2016 19:07" } }
+		"onVoyageServerDo:serializeBlock:" : "dkh 8/9/2016 19:50",
+		"onVoyageServerDo:serializeBlock:variableBindings:" : "dkh 8/9/2016 19:50" } }

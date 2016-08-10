@@ -3,6 +3,7 @@
 		"database:" : "dkh 5/8/2016 09:39",
 		"dbServerClassName:database:" : "TravisCI 7/25/2016 14:14",
 		"defaultPoolSize" : "TravisCI 7/21/2016 09:59",
+		"defaultRepositoryContainerClass" : "dkh 8/9/2016 20:01",
 		"defaultSessionDescription" : "TravisCI 7/22/2016 12:31",
 		"example" : "dkh 8/4/2016 15:47",
 		"exampleInternalTalk" : "TravisCI 8/1/2016 11:28",
