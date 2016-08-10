@@ -4,9 +4,12 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
   voyageVariableBindings := self objectSerializer
     fromString: voyageVariableBindingsSTONString.
   variableBindings := Dictionary new.
-  theDbServerClassName := voyageVariableBindings
+  theDbServerClassName := (voyageVariableBindings
     at: '#dbServerClassName'
-    ifAbsent: [ 'TugrikDbServer' ].
+    ifAbsent: [  ])
+    ifNil: [ 
+      "the entry in voyageVariableBindings could be nil"
+      'TugrikDbServer' ].
   voyageVariableBindings removeKey: '#dbServerClassName' ifAbsent: [  ].
   theDbServerClass := Smalltalk at: theDbServerClassName.
   voyageVariableBindings
