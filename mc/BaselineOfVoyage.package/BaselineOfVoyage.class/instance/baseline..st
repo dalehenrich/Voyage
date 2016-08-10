@@ -24,8 +24,8 @@ baseline: spec
 			package: 'Voyage-Model-Core' with: [ spec includes: 'Voyage-Pharo-Model-Core' ];
 			package: 'Voyage-Pharo-Model-Tests' with: [ spec requires: 'Voyage-Pharo-Model-Core' ];
 			package: 'Voyage-Memory-Core' with: [ spec requires: 'Voyage-Model-Core' ];
-			package: 'Voyage-Pharo-JSON';
-			package: 'Voyage-JSON-Core' with: [ spec requires: #('Voyage-Pharo-JSON') ];
+			package: 'Voyage-Pharo-JSON' with: [ spec requires: #('Voyage-JSON-Core') ];
+			package: 'Voyage-JSON-Core' with: [ spec includes: #('Voyage-Pharo-JSON') ];
 			"mongo"
 			package: 'Voyage-Mongo-Core' with: [ spec requires: #('MongoTalk' 'Voyage-Model-Core' 'Voyage-Mongo-JSON') ];
 			package: 'Voyage-Mongo-JSON' with: [ spec requires: #('Voyage-JSON-Core') ];
