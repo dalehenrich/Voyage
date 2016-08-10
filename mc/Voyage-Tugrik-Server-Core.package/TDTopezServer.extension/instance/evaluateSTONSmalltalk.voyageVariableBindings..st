@@ -1,9 +1,21 @@
 *voyage-tugrik-server-core
 evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBindingsSTONString
-  | result variableBindings voyageVariableBindings db |
+  | result variableBindings voyageVariableBindings db currentRepository theDatabaseName theDbServerClassName theDbServerClass |
   voyageVariableBindings := self objectSerializer
     fromString: voyageVariableBindingsSTONString.
   variableBindings := Dictionary new.
+  theDbServerClassName := voyageVariableBindings
+    at: '#dbServerClassName'
+    ifAbsent: [ 'TugrikDbServer' ].
+  voyageVariableBindings removeKey: '#dbServerClassName' ifAbsent: [  ].
+  theDbServerClass := Smalltalk at: theDbServerClassName.
+  voyageVariableBindings
+    at: '#databaseName'
+    ifPresent: [ :dbName | 
+      theDatabaseName := dbName.
+      theDbServerClass databaseNamed: dbName ]
+    ifAbsent: [  ].
+  voyageVariableBindings removeKey: '#databaseName' ifAbsent: [  ].
   voyageVariableBindings
     keysAndValuesDo: [ :key :attributeDict | 
       | voyageWrapper dbCollection obj |
@@ -11,7 +23,7 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
       attributeDict
         at: 'databaseName'
         ifPresent: [ :databaseName | 
-          db := TugrikDbServer databaseNamed: databaseName.
+          db := theDbServerClass databaseNamed: databaseName.
           dbCollection := db
             collectionNamed: (attributeDict at: 'collectionName').
           voyageWrapper := dbCollection
@@ -20,9 +32,14 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
             ifNew: [ :ignored |  ].
           variableBindings at: key put: voyageWrapper _obj ]
         ifAbsent: [ variableBindings at: key put: obj ] ].
+  currentRepository := VOTugrikRepository current.
+  [ 
+  theDatabaseName
+    ifNotNil: [ (VOTugrikRepository database: theDatabaseName) enableSingleton ].
   result := self
     evaluateSmalltalk: smalltalkSource
-    variableBindings: variableBindings.
+    variableBindings: variableBindings ]
+    ensure: [ VOTugrikRepository setRepository: currentRepository ].
   db
     ifNil: [ 
       "probably should make databaseName an explicit argument to this method"

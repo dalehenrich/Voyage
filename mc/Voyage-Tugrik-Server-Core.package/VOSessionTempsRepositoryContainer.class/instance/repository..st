@@ -1,3 +1,3 @@
 accessing
-setRepository: aRepository
+repository: aRepository
   SessionTemps current at: self sessionTempsKey put: aRepository

@@ -1,6 +1,6 @@
 examples
 voyageServerBlockExample
-  ^ '	"(VOGemStoneRepository database: ''my example'') enableSingleton".
+  ^ '	"(VOTugrikRepository database: ''my example'') enableSingleton".
 	"VORepository current"
 	"VORepository current dropDatabase"
 

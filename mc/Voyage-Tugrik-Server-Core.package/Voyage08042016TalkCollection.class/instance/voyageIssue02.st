@@ -6,8 +6,8 @@ Client instances not automatically refreshed on change ... however, if one queri
 
 "rep1 and rep2 each have their own object cache, so this simulates two separate images"
 
-rep1 := VOGemStoneRepository database: ''gemtalk example''.
-rep2 := VOGemStoneRepository database: ''gemtalk example''.
+rep1 := VOTugrikRepository database: ''gemtalk example''.
+rep2 := VOTugrikRepository database: ''gemtalk example''.
 rep1 removeAll: VOTestPilot.
 
 pilot1 := VOTestPilot new

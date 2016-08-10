@@ -2,10 +2,11 @@ examples
 voyageServerBlocks05
   ^ '"Should be able to implement VORepository and save logic on server so that code can be transparently executed on server or client ..."
 
-[
-	| repository pilot |
-	repository := VOGemStoneRepository database: ''gemtalk example''.
+	| repository |
+	repository := VOTugrikRepository database: ''gemtalk example''.
 	repository enableSingleton.
+
+[	| pilot |
 	pilot := VOTestPilot new
 		name: ''Janet'';
 		aux: 15;

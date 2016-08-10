@@ -4,7 +4,7 @@ voyageClassMapping01
 
 | pet pilot query databaseName |
 
-(VOGemStoneRepository 
+(VOTugrikRepository 
 	dbServerClassName: ''VoyageClassMappingDbServer'' 
 	database: ''gemtalk example'') enableSingleton.
 

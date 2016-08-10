@@ -1,15 +1,13 @@
 {
 	"class" : {
 		"collectionClass" : "dkh 08/04/2016 16:09",
-		"current" : "dkh 08/04/2016 16:09",
 		"database:" : "dkh 08/04/2016 16:09",
 		"dbServerClassName:database:" : "dkh 08/04/2016 16:09",
+		"defaultRepositoryContainerClass" : "dkh 08/09/2016 19:23",
 		"defaultVersionGenerator" : "dkh 08/05/2016 11:49",
 		"platformIdentifier" : "dkh 08/09/2016 07:47",
 		"sessionDescription:database:" : "dkh 08/04/2016 16:09",
-		"sessionDescription:dbServerClassName:database:" : "dkh 08/04/2016 16:09",
-		"sessionTempsKey" : "dkh 08/04/2016 16:09",
-		"setRepository:" : "dkh 08/04/2016 16:09" },
+		"sessionDescription:dbServerClassName:database:" : "dkh 08/04/2016 16:09" },
 	"instance" : {
 		"collectionAt:inDatabase:" : "dkh 08/09/2016 09:57",
 		"collectionClass" : "dkh 08/09/2016 11:00",
@@ -23,6 +21,7 @@
 		"descriptionBuilder" : "dkh 08/09/2016 07:48",
 		"dropDatabase" : "dkh 08/09/2016 10:16",
 		"enableSingleton" : "dkh 08/04/2016 16:09",
+		"flush" : "dkh 08/09/2016 21:47",
 		"flushCache" : "dkh 08/09/2016 11:01",
 		"idOf:" : "dkh 08/09/2016 13:42",
 		"initialize" : "dkh 08/09/2016 17:48",

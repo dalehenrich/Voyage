@@ -3,9 +3,9 @@ voyageAPI
   ^ '"Repository Creation"
 "Instance mode - any number of connected repositories"
 
-repository := VOGemStoneRepository database: ''gemtalk example''.
+repository := VOTugrikRepository database: ''gemtalk example''.
 
-repository := VOGemStoneRepository 
+repository := VOTugrikRepository 
 	sessionDescription: aSessionDescription 
 	database: ''gemtalk example''.
 

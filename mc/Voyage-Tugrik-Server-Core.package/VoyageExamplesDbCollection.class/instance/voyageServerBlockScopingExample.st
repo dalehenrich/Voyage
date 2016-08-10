@@ -2,8 +2,8 @@ examples
 voyageServerBlockScopingExample
   ^ '
 	| retrieved pilot |
-	"(VOGemStoneRepository database: ''my example'') enableSingleton"
-	"(VOGemStoneRepository dbServerClassName: ''VoyageClassMappingDbServer'' database: ''my example'') enableSingleton"
+	"(VOTugrikRepository database: ''my example'') enableSingleton"
+	"(VOTugrikRepository dbServerClassName: ''VoyageClassMappingDbServer'' database: ''my example'') enableSingleton"
 
 	10 timesRepeat: [ | id |
 		id := 100 atRandom asString.
