@@ -83,6 +83,7 @@ startClient voyage -s Voyage
 # Voyage References
 
 - **Voyage By Example** ESUG 2014 [video][11] & [slides][12]
+- **MongoTalk/voyage** ESUG 2013 [slides][13]
 
 # Client-Server Architecture References
 
@@ -98,4 +99,5 @@ startClient voyage -s Voyage
 [10]: http://www.knowledgeonecorp.com/news/pdfs/Thin%20client%20vs%20Fat%20client%20Computing.pdf
 [11]: https://www.youtube.com/watch?v=1szVgKQm474
 [12]: http://www.slideshare.net/esug/esug2014-voyage
+[13]: http://www.slideshare.net/esug/mongotalkvoyage?next_slideshow=2
 
