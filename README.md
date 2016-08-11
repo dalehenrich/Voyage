@@ -83,7 +83,7 @@ startClient voyage -s Voyage
 # Voyage References
 
 - **Voyage By Example** ESUG 2014 [video][11] & [slides][12]
-- 
+
 # Client-Server Architecture References
 
 - [**Hybrid Shipping Architectures: A Survey**][7]
