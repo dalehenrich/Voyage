@@ -5,6 +5,8 @@
 		"repository:" : "dkh 5/8/2016 11:14",
 		"retries" : "dkh 5/8/2016 11:14" },
 	"instance" : {
+		"basicCreateCollectionFor:" : "dkh 8/11/2016 07:45",
+		"createCollectionFor:" : "dkh 8/11/2016 07:45",
 		"dbServerClassName" : "TravisCI 7/25/2016 14:10",
 		"dbServerClassName:" : "TravisCI 7/25/2016 14:10",
 		"flush" : "TravisCI 7/21/2016 11:02",
