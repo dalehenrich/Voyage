@@ -70,7 +70,16 @@ startClient voyage -s Voyage
 ```smalltalk
 (FileLocator imageDirectory / 'customClientLoad.st') fileIn
 ```
+# Client-Server Architecture References
 
+[**Hybrid Shipping Architectures: A Survey**][7]
+[**An Adaptive Hybrid Server Architecture for Client Caching ODBMSs**][8]
+[**A Study of Query Execution Strategies for Client-Server Database Systems**][9]
+[**Thin-Client Vs Fat-Client Computing**][10]
 
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
+[7]: https://cs.uwaterloo.ca/~tozsu/courses/cs748t/surveys/bowman.pdf
+[8]: http://www.vldb.org/conf/1999/P13.pdf
+[9]: http://drum.lib.umd.edu/bitstream/handle/1903/752/CS-TR-3512.pdf?sequence=2&isAllowed=y
+[10]: http://www.knowledgeonecorp.com/news/pdfs/Thin%20client%20vs%20Fat%20client%20Computing.pdf
 
