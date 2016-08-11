@@ -82,10 +82,10 @@ startClient voyage -s Voyage
 
 # Client-Server Architecture References
 
-[**Hybrid Shipping Architectures: A Survey**][7]
-[**An Adaptive Hybrid Server Architecture for Client Caching ODBMSs**][8]
-[**A Study of Query Execution Strategies for Client-Server Database Systems**][9]
-[**Thin-Client Vs Fat-Client Computing**][10]
+- [**Hybrid Shipping Architectures: A Survey**][7]
+- [**An Adaptive Hybrid Server Architecture for Client Caching ODBMSs**][8]
+- [**A Study of Query Execution Strategies for Client-Server Database Systems**][9]
+- [**Thin-Client Vs Fat-Client Computing**][10]
 
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
 [7]: https://cs.uwaterloo.ca/~tozsu/courses/cs748t/surveys/bowman.pdf
