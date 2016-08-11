@@ -96,6 +96,6 @@ startClient voyage -s Voyage
 [8]: http://www.vldb.org/conf/1999/P13.pdf
 [9]: http://drum.lib.umd.edu/bitstream/handle/1903/752/CS-TR-3512.pdf?sequence=2&isAllowed=y
 [10]: http://www.knowledgeonecorp.com/news/pdfs/Thin%20client%20vs%20Fat%20client%20Computing.pdf
-[11]: https://www.youtube.com/watch?v=vxork8Kckh8
+[11]: https://www.youtube.com/watch?v=1szVgKQm474
 [12]: http://www.slideshare.net/esug/esug2014-voyage
 
