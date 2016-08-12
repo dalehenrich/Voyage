@@ -10,20 +10,19 @@ testServerBlock02
 	pilot3 := VOTestPilot new
 		name: 'Pilot3';
 		yourself.
-
 	self repository save: pilot.
 	self repository save: pilot2.
 	self repository save: pilot3.
-
 	databaseName := self repository databaseName.
 
 	"look up and return wrapper and get proper instance on client"
 	answer := [ | db collection |
-		db := (Smalltalk at: #TugrikDbServer) databaseNamed: databaseName.
-		collection := (db collections at: 'TestPilot') collection.
-		collection detect: [ :aPilotWrapper| aPilotWrapper _obj name = pilot3 name ] ifNone: [ 'sorry charlie' ] ]
-			voyageDoOnServer: self repository.
-		
+	VORepository current abort.	"avort needed to make sure that block sees latest view"
+	db := (Smalltalk at: #TugrikDbServer) databaseNamed: databaseName.
+	collection := (db collections at: 'TestPilot') collection.
+	collection
+		detect: [ :aPilotWrapper | aPilotWrapper _obj name = pilot3 name ]
+		ifNone: [ self error: 'sorry charlie' ] ] voyageDoOnServer: self repository.
 	self assert: answer class == VOTestPilot.
 	self assert: answer name = pilot3 name.
-	self assert: answer == pilot3.
+	self assert: answer == pilot3

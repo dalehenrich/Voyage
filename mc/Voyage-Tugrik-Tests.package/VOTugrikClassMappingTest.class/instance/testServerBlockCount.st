@@ -10,18 +10,16 @@ testServerBlockCount
 	pilot3 := VOTestPilot new
 		name: 'Pilot3';
 		yourself.
-
-	self repository save: pilot; 
-		save: pilot2; 
+	self repository
+		save: pilot;
+		save: pilot2;
 		save: pilot3.
-
 	databaseName := self repository databaseName.
-	dbServerClassName := self repository  dbServerClassName.
-
-	answer := [ |serverRepository |
-		serverRepository := VOTugrikRepository dbServerClassName: dbServerClassName database: databaseName.
-		serverRepository count: VOTestPilot.
-		] voyageDoOnServer: self repository.
-		
+	dbServerClassName := self repository dbServerClassName.
+	answer := [ | serverRepository |
+	VORepository current abort.	"avort needed to make sure that block sees latest view"
+	serverRepository := VOTugrikRepository
+		dbServerClassName: dbServerClassName
+		database: databaseName.
+	serverRepository count: VOTestPilot ] voyageDoOnServer: self repository.
 	self assert: answer = 3
-	
