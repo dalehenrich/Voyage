@@ -9,8 +9,7 @@ voyageSwitchToClassMapping
 (VOTugrikRepository 
 	dbServerClassName: ''VoyageClassMappingDbServer'' 
 	database: ''gemtalk example'') 
-		enableSingleton
-		.
+		enableSingleton.
 
 VOTugrikRepository current flush
 '
