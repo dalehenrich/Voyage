@@ -1,0 +1,28 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Voyage',
+      #directory : 'mc',
+      #load : [ 'tugrik tests' ],
+      #platforms : [ #pharo ]
+    },
+    SCIMetacelloLoadSpec {
+      #baseline : 'Voyage',
+      #directory : 'mc',
+      #load : [ 'tugrik tests' ],
+      #platforms : [ #gemstone ]
+    } 
+  ],
+  #testing : {
+    #include: {
+      #projects : [ 'Tugrik' ],
+      #classes : [ #SentButNotImplementedTest, #UndefinedSymbolsTest ]
+    }
+  },
+  #configuring : [
+    SCIGemStoneServerConfigSpec {
+     #defaultSessionName : 'Uncle',
+     #platforms : [ #gemstoneClient ] 
+    }
+  ]
+}

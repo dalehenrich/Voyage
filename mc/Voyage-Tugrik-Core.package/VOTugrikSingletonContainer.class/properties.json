@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Core-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository" ],
+	"name" : "VOTugrikSingletonContainer",
+	"pools" : [
+		 ],
+	"super" : "VORepositoryContainer",
+	"type" : "normal" }

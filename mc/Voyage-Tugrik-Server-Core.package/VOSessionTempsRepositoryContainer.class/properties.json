@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOSessionTempsRepositoryContainer",
+	"pools" : [
+		 ],
+	"super" : "VORepositoryContainer",
+	"type" : "normal" }

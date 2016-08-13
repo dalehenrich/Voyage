@@ -1,0 +1,15 @@
+{
+	"category" : "Voyage-JSON-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"repository",
+		"cache" ],
+	"name" : "VODescriptionBuilder",
+	"pools" : [
+		 ],
+	"super" : "MAPragmaBuilder",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+voyage json
+isTypeWrapper
+  ^ true

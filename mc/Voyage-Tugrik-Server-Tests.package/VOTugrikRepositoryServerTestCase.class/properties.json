@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Server-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOTugrikRepositoryServerTestCase",
+	"pools" : [
+		 ],
+	"super" : "VORepositoryTest",
+	"type" : "normal" }

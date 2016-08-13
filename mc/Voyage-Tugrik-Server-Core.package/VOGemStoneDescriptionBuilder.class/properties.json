@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Server-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOGemStoneDescriptionBuilder",
+	"pools" : [
+		 ],
+	"super" : "VODescriptionBuilder",
+	"type" : "normal" }

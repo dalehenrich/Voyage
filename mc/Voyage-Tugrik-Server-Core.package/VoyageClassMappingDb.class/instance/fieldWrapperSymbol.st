@@ -1,0 +1,3 @@
+materialization
+fieldWrapperSymbol
+  ^ self materializerClass fieldWrapperSymbol

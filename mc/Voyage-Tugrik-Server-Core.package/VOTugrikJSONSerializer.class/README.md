@@ -1,0 +1,1 @@
+I'm a serializer from gemstone objects to mongo documents (dictionaries). 

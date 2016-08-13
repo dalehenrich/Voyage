@@ -1,0 +1,3 @@
+accessing
+repository2
+	^ VOTugrikClassMappingTestResource current repository2

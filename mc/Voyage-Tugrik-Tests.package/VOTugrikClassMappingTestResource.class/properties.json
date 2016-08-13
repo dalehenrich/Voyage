@@ -1,0 +1,14 @@
+{
+	"category" : "Voyage-Tugrik-Tests-Resources",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VOTugrikClassMappingTestResource",
+	"pools" : [
+		 ],
+	"super" : "VOTugrikTestResource",
+	"type" : "normal" }

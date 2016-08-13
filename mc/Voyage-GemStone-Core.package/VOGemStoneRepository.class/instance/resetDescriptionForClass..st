@@ -1,3 +1,0 @@
-reseting
-resetDescriptionForClass: aClass
-	self descriptionBuilder removeDescriptionOf: aClass

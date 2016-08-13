@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"_isPartial" : "dkh 08/09/2016 23:37",
+		"_isPartial:" : "dkh 08/09/2016 23:38",
+		"_obj" : "dkh 08/05/2016 16:17",
+		"_obj:" : "dkh 08/08/2016 06:34",
+		"doesNotUnderstand:" : "dkh 08/08/2016 11:08",
+		"dynamicInstVarAt:" : "dkh 08/05/2016 16:32",
+		"dynamicInstVarAt:put:" : "dkh 08/05/2016 16:32",
+		"hasField:" : "dkh 08/05/2016 16:29",
+		"initialize" : "dkh 08/09/2016 23:38",
+		"isTypeWrapper" : "dkh 08/08/2016 07:31",
+		"keysAndValuesDo:" : "dkh 08/08/2016 07:47" } }

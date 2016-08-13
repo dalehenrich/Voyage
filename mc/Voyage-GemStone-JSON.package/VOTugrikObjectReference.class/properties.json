@@ -1,0 +1,17 @@
+{
+	"category" : "Voyage-GemStone-JSON",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parentObject",
+		"instanceOf",
+		"collectionName",
+		"objectId" ],
+	"name" : "VOTugrikObjectReference",
+	"pools" : [
+		 ],
+	"super" : "ProtoObject",
+	"type" : "normal" }

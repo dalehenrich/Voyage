@@ -1,24 +1,28 @@
 language: smalltalk
 sudo: false
-
-#os:       #comment out both oses at once - workaround for https://github.com/travis-ci/travis-ci/issues/6028 (see https://github.com/hpi-swa/smalltalkCI/issues/138 for discussion of alternate workarounds)
-# - linux
+os: linux
+#  - linux
 #  - osx
+
 services: 
   - mongodb
 smalltalk:
+  - Pharo-6.0
   - Pharo-5.0
   - Pharo-4.0
   - Pharo-3.0
-
+smalltalk_config: .smalltalk.ston
 matrix:
   include:
-    - smalltalk_config: .smalltalk_gemstone.ston
-      smalltalk: GemStone-3.3.1
+    - smalltalk: GemStone-3.3.1
+      smalltalk_config: .smalltalk-tugrik.ston
       env: GSCI_CLIENTS="Pharo-5.0"
-  allow_failures:
-    - smalltalk: Pharo-5.0 # VOMongoCacheTest>>testSaveWithSubclassesAndRelations fails pretty consistently?
-
-cache:
-  directories:
-    - $SMALLTALK_CI_CACHE
+      cache:
+        directories:
+          - $SMALLTALK_CI_CACHE
+    - smalltalk: Pharo-6.0
+      before_script: wget https://github.com/pharo-nosql/PunQLite/releases/download/stable/unqlite.so
+      smalltalk_config: .smalltalk-unqlite.ston
+    - smalltalk: Pharo-5.0
+      before_script: wget https://github.com/pharo-nosql/PunQLite/releases/download/stable/unqlite.so
+      smalltalk_config: .smalltalk-unqlite.ston

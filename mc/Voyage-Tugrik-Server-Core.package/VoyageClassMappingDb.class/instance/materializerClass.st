@@ -1,0 +1,3 @@
+materialization
+materializerClass
+  ^ VOTugrikJSONMaterializer

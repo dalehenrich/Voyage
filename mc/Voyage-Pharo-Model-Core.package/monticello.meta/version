@@ -1,0 +1,1 @@
+(name 'Voyage-Pharo-Model-Core-dkh.1' message 'VOCache is not needed (nor portable) in GemStone move VOCache and tests into Voyage-Pharo-Model-* packages' id '737b49fb-6f10-4648-a398-1bd87944ba66' date '5 August 2016' time '2:07:38.664836 pm' author 'dkh' ancestors () stepChildren ())

@@ -1,3 +1,0 @@
-defaults
-defaultPoolSize 
-	^1

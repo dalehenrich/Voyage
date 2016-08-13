@@ -21,13 +21,22 @@ Voyage is part of the upcoming "Pharo for the Enterprise 2" book, and Johan Fabr
 
 Just install it from you Pharo catalog. 
 
-You can also install it executing this script:
+You can also install it executing scripts:
 
+### Voyage-Mongo
 ```Smalltalk
 Metacello new 
 	repository: 'github://pharo-nosql/voyage/mc';
-	baseline: 'VoyageMongo';
-	load.
+	baseline: 'Voyage';
+	load: 'mongo tests'.
+```
+
+### Voyage-UnQLite
+```Smalltalk
+Metacello new 
+	repository: 'github://pharo-nosql/voyage/mc';
+	baseline: 'Voyage';
+	load: 'unqlite tests'.
 ```
 
 ## GemStone/S 64
@@ -56,10 +65,10 @@ createClient tode
 
 ```
 # Create Voyage stone
-createStone -u http://gsdevkit.github.io/GsDevKit_home/VoyageMongo.ston -i VoyageMongo -l VoyageMongo Voyage 3.3.1
+createStone -u http://gsdevkit.github.io/GsDevKit_home/Voyage.ston -i Voyage -l Voyage Voyage 3.3.1
 
 # Create Voyage Pharo5.0 client
-createClient -t pharo voyage -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk_gemstone.ston
+createClient -t pharo voyage -l -v Pharo5.0 -z $GS_HOME/shared/repos/voyage/.smalltalk-tugrik.ston
 
 # Start interactive Voyage client
 startClient voyage -s Voyage
@@ -72,14 +81,24 @@ startClient voyage -s Voyage
 ```
 # Client-Server Architecture References
 
-[**Hybrid Shipping Architectures: A Survey**][7]
-[**An Adaptive Hybrid Server Architecture for Client Caching ODBMSs**][8]
-[**A Study of Query Execution Strategies for Client-Server Database Systems**][9]
-[**Thin-Client Vs Fat-Client Computing**][10]
+# Voyage References
+
+- **Voyage By Example** ESUG 2014 [video][11] & [slides][12]
+- **MongoTalk/voyage** ESUG 2013 [slides][13]
+
+# Client-Server Architecture References
+
+- [**Hybrid Shipping Architectures: A Survey**][7]
+- [**An Adaptive Hybrid Server Architecture for Client Caching ODBMSs**][8]
+- [**A Study of Query Execution Strategies for Client-Server Database Systems**][9]
+- [**Thin-Client Vs Fat-Client Computing**][10]
 
 [6]: https://github.com/GsDevKit/GsDevKit_home#installation
 [7]: https://cs.uwaterloo.ca/~tozsu/courses/cs748t/surveys/bowman.pdf
 [8]: http://www.vldb.org/conf/1999/P13.pdf
 [9]: http://drum.lib.umd.edu/bitstream/handle/1903/752/CS-TR-3512.pdf?sequence=2&isAllowed=y
 [10]: http://www.knowledgeonecorp.com/news/pdfs/Thin%20client%20vs%20Fat%20client%20Computing.pdf
+[11]: https://www.youtube.com/watch?v=1szVgKQm474
+[12]: http://www.slideshare.net/esug/esug2014-voyage
+[13]: http://www.slideshare.net/esug/mongotalkvoyage?next_slideshow=2
 
