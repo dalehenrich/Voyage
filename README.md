@@ -39,11 +39,11 @@ Metacello new
 	load: 'unqlite tests'.
 ```
 
-## GemStone/S 64
-The GemStone/S 64 backend for Voyage is based upon [Tugrik](https://github.com/dalehenrich/Tugrik) a persistence layer for Pharo5.0 that is compatible with the [MongoTalk](https://github.com/pharo-nosql/mongotalk) Smalltalk API.
+## Voyage-Tugrik
+Voyage-Tugrik is a GemStone/S 64 backend for Voyage that is based upon [Tugrik](https://github.com/dalehenrich/Tugrik) a persistence layer for Pharo5.0 that is compatible with the [MongoTalk](https://github.com/pharo-nosql/mongotalk) Smalltalk API.
 
 ### Proof of Concept
-At this stage, Tugrik is [passing all of the Mongo tests](https://travis-ci.org/dalehenrich/Tugrik#L1891) and VoyageGemStone is [passing all of the VoyageMongo tests](https://travis-ci.org/dalehenrich/voyage/jobs/136800410#L1989). 
+At this stage, Tugrik is [passing all of the Mongo tests](https://travis-ci.org/dalehenrich/Tugrik#L1891) and Voyage-Tugrik is [passing all of the Voyage tests](https://travis-ci.org/dalehenrich/voyage/builds/152066982). 
 In total there are a little over 100 tests, so the work is far from complete, but it is encouraging to be at this stage.
 
 #### Install GsDevKit_home
