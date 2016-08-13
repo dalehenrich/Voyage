@@ -17,8 +17,8 @@ testServerBlock01
 
 	"lookup and return wrapped object and get proper instance on client"
 	answer := [ | db collection ans |
-	VORepository current abort.	"avort needed to make sure that block sees latest view"
-	db := (Smalltalk at: #TugrikDbServer) databaseNamed: databaseName.
+	VORepository current abort.	"abort needed to make sure that block sees latest view"
+	db := (Smalltalk at: #VoyageClassMappingDbServer) databaseNamed: databaseName.
 	collection := (db collections at: 'TestPilot') collection.
 	ans := collection
 		detect: [ :aPilot | aPilot _obj name = pilot3 name ]

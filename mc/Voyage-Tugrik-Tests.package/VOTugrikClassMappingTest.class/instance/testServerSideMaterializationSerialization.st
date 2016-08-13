@@ -5,7 +5,8 @@ testServerSideMaterializationSerialization
 		name: 'Pilot1';
 		yourself.
 	self repository save: pilot.
-	ar := [ {pilot.
+	ar := [ VORepository current abort.	"abort needed to make sure that block sees latest view"
+	{pilot.
 	(pilot class == VOTestPilot).
 	pilot class name} ] voyageDoOnServer: self repository.
 	answer := ar at: 1.

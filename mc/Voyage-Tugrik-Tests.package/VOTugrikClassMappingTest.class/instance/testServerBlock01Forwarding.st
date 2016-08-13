@@ -17,8 +17,8 @@ testServerBlock01Forwarding
 
 	"lookup and return object wrappper, using VOTestPilot messages and get proper instance on client"
 	answer := [ | db collection |
-	VORepository current abort.	"avort needed to make sure that block sees latest view"
-	db := (Smalltalk at: #TugrikDbServer) databaseNamed: databaseName.
+	VORepository current abort.	"abort needed to make sure that block sees latest view"
+	db := (Smalltalk at: #VoyageClassMappingDbServer) databaseNamed: databaseName.
 	collection := (db collections at: 'TestPilot') collection.
 	collection
 		detect: [ :aPilot | aPilot aux = pilot3 aux ]

@@ -13,6 +13,7 @@ testServerSideObjectStructure05
 	clientRootArray := {pilot.
 	pet}.
 	ar := [ | clientPilot clientPet serverPet |
+	VORepository current abort.	"abort needed to make sure that block sees latest view"
 	clientPilot := clientRootArray at: 1.
 	clientPet := clientRootArray at: 2.
 	serverPet := clientPilot pet.
