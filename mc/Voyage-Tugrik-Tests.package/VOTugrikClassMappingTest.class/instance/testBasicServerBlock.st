@@ -22,7 +22,8 @@ testBasicServerBlock
 		yourself.
 	
 	databaseName := self repository databaseName.
-	retrievedPilots := [ (((Smalltalk at: #TugrikDbServer) databaseNamed: databaseName)
+	retrievedPilots := [(Smalltalk at: #System) abort.
+		 (((Smalltalk at: #VoyageClassMappingDbServer) databaseNamed: databaseName)
 		selectCollectionNamed: 'TestPilot'
 		queryDict: mongoQuery) collect: [:each | each _obj ]] voyageDoOnServer: self repository.
 
