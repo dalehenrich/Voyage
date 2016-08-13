@@ -3,7 +3,7 @@ voyageSwitchToClassMapping
   ^ '[
 	VOTugrikRepository current abort.
 	(Smalltalk at: #VoyageClassMappingDbServer) resetRoot. 
-	VOTugrikRepository current createCollectionFor: VOTestPilot
+	VOTugrikRepository current createCollectionFor: VOTestPilot.
 	VOTugrikRepository current commit ] voyageDoOnServer.
 
 (VOTugrikRepository 
