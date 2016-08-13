@@ -7,7 +7,7 @@ voyageTransactionConflicts
 	self confirm: ''Are you ready to commit?''.
 	VORepository current commit.
 	Smalltalk at: #''_TUGRIK_X''
-	] voyageDoOnServer
+	] voyageDoOnServer.
 
 "You can also have a client-side error handler for Transaction errors"
 [ [ VORepository current abort.
