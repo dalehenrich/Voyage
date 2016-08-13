@@ -80,6 +80,11 @@ startClient voyage -s Voyage
 (FileLocator imageDirectory / 'customClientLoad.st') fileIn
 ```
 
+# Voyage References
+
+- **Voyage By Example** ESUG 2014 [video][11] & [slides][12]
+- **MongoTalk/voyage** ESUG 2013 [slides][13]
+
 # Client-Server Architecture References
 
 - [**Hybrid Shipping Architectures: A Survey**][7]
@@ -92,4 +97,7 @@ startClient voyage -s Voyage
 [8]: http://www.vldb.org/conf/1999/P13.pdf
 [9]: http://drum.lib.umd.edu/bitstream/handle/1903/752/CS-TR-3512.pdf?sequence=2&isAllowed=y
 [10]: http://www.knowledgeonecorp.com/news/pdfs/Thin%20client%20vs%20Fat%20client%20Computing.pdf
+[11]: https://www.youtube.com/watch?v=1szVgKQm474
+[12]: http://www.slideshare.net/esug/esug2014-voyage
+[13]: http://www.slideshare.net/esug/mongotalkvoyage?next_slideshow=2
 

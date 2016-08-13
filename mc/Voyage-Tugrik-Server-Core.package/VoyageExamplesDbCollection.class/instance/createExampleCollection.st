@@ -34,4 +34,14 @@ createExampleCollection
     at: #'name' put: 'Voyage Server Block Scoping II';
     at: #'order' put: 25;
     at: #'contents' put: self voyageServerBlockScopingExample02;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Transaction Conflicts';
+    at: #'order' put: 30;
+    at: #'contents' put: self voyageTransactionConflicts;
+    yourself).
+  (Dictionary new
+    at: #'name' put: 'Voyage Server Block Set Breakpoint';
+    at: #'order' put: 35;
+    at: #'contents' put: self voyageSetBreakPointForServerBlock;
     yourself)} do: [ :dict | self doInsert: dict ]

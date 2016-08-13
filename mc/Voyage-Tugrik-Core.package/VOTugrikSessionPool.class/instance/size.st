@@ -1,3 +1,3 @@
 accessing
 size
-	^size ifNil: [1]
+	^size ifNil: [2]

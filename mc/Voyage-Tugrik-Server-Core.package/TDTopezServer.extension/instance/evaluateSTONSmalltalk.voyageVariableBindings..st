@@ -38,7 +38,10 @@ evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBin
   currentRepository := VOTugrikRepository current.
   [ 
   theDatabaseName
-    ifNotNil: [ (VOTugrikRepository database: theDatabaseName) enableSingleton ].
+    ifNotNil: [ 
+      (VOTugrikRepository
+        dbServerClassName: theDbServerClassName
+        database: theDatabaseName) enableSingleton ].
   result := self
     evaluateSmalltalk: smalltalkSource
     variableBindings: variableBindings ]

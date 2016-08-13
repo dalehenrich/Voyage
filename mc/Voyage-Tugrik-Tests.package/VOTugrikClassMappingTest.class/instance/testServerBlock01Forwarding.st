@@ -17,12 +17,13 @@ testServerBlock01Forwarding
 
 	"lookup and return object wrappper, using VOTestPilot messages and get proper instance on client"
 	answer := [ | db collection |
+	VORepository current abort.	"avort needed to make sure that block sees latest view"
 	db := (Smalltalk at: #TugrikDbServer) databaseNamed: databaseName.
 	collection := (db collections at: 'TestPilot') collection.
-	collection detect:
-		[ :aPilot | 
-			"only a partial solution until dynamicInstVar support added to ProtoObject on Server"
-			aPilot aux = pilot3 aux ] ifNone: [ 'sorry charlie' ]	 ]
+	collection
+		detect: [ :aPilot | aPilot aux = pilot3 aux ]
+		ifNone: [ self error: 'sorry charlie' ]
+	"only a partial solution until dynamicInstVar support added to ProtoObject on Server" ]
 		voyageDoOnServer: self repository.
 	self assert: answer class == VOTestPilot.
 	self assert: answer aux = pilot3 aux.

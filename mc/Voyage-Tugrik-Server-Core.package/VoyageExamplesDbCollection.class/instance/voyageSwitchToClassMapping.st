@@ -1,12 +1,15 @@
 examples
 voyageSwitchToClassMapping
   ^ '[
-	System abort.
-	VoyageClassMappingDbServer resetRoot. 
-	VoyageClassMappingDbServer root.
-	System commit ] voyageDoOnServer.
+	VOTugrikRepository current abort.
+	(Smalltalk at: #VoyageClassMappingDbServer) resetRoot. 
+	VOTugrikRepository current createCollectionFor: VOTestPilot
+	VOTugrikRepository current commit ] voyageDoOnServer.
 
 (VOTugrikRepository 
 	dbServerClassName: ''VoyageClassMappingDbServer'' 
-	database: ''gemtalk example'') enableSingleton.
+	database: ''gemtalk example'') 
+		enableSingleton.
+
+VOTugrikRepository current flush
 '

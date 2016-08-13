@@ -2,10 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createExampleCollection" : "dkh 08/09/2016 22:25",
+		"createExampleCollection" : "dkh 08/11/2016 17:32",
 		"voyageBasicExample" : "dkh 08/09/2016 19:28",
 		"voyageServerBlockExample" : "dkh 08/09/2016 19:28",
 		"voyageServerBlockQueryExample" : "dkh 07/26/2016 08:59",
 		"voyageServerBlockScopingExample01" : "dkh 08/10/2016 00:09",
 		"voyageServerBlockScopingExample02" : "dkh 08/09/2016 22:19",
-		"voyageSwitchToClassMapping" : "dkh 08/09/2016 22:23" } }
+		"voyageSetBreakPointForServerBlock" : "dkh 08/12/2016 11:08",
+		"voyageSwitchToClassMapping" : "dkh 08/11/2016 16:29",
+		"voyageTransactionConflicts" : "dkh 08/11/2016 17:31" } }
