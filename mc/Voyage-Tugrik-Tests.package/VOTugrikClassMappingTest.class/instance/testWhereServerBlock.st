@@ -13,7 +13,7 @@ testWhereServerBlock
 	self repository save: pilot.
 	self repository save: pilot2.
 	self repository save: pilot3.
-	selected := [ VORepository current abort.
+	selected := [ 
 		VORepository current
 		selectOne: VOTestPilot
 		where: [ :each |  each voyageTestDataCompareEqualTo: pilot ] ]

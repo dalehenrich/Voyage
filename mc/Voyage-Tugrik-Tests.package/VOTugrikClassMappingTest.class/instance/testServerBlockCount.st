@@ -17,7 +17,6 @@ testServerBlockCount
 	databaseName := self repository databaseName.
 	dbServerClassName := self repository dbServerClassName.
 	answer := [ | serverRepository |
-	VORepository current abort.	"abort needed to make sure that block sees latest view"
 	serverRepository := VOTugrikRepository
 		dbServerClassName: dbServerClassName
 		database: databaseName.

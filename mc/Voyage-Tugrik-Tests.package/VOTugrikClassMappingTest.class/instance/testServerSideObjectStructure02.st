@@ -6,6 +6,6 @@ testServerSideObjectStructure02
 		aux: clientAr;
 		yourself.
 	self repository save: pilot.
-	serverAr := [ VORepository current abort.	"abort needed to make sure that block sees latest view"
+	serverAr := [ 
 	pilot aux ] voyageDoOnServer: self repository.
 	self assert: serverAr = clientAr

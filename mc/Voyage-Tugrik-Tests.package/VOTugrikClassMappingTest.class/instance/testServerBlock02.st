@@ -17,7 +17,6 @@ testServerBlock02
 
 	"look up and return wrapper and get proper instance on client"
 	answer := [ | db collection |
-	VORepository current abort.	"abort needed to make sure that block sees latest view"
 	db := (Smalltalk at: #VoyageClassMappingDbServer) databaseNamed: databaseName.
 	collection := (db collections at: 'TestPilot') collection.
 	collection

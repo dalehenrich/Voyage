@@ -10,7 +10,6 @@ testServerSideObjectStructure01
 	self repository save: pet.
 	self repository save: pilot.
 	ar := [ | serverPet |
-	VORepository current abort.	"abort needed to make sure that block sees latest view"
 	serverPet := pilot pet.
 	{serverPet.
 	(serverPet class = VOTestDog).
