@@ -1,6 +1,7 @@
 *voyage-tugrik-server-core
 evaluateSTONSmalltalk: smalltalkSource voyageVariableBindings: voyageVariableBindingsSTONString
   | result variableBindings voyageVariableBindings db currentRepository theDatabaseName theDbServerClassName theDbServerClass |
+  System abort.
   voyageVariableBindings := self objectSerializer
     fromString: voyageVariableBindingsSTONString.
   variableBindings := Dictionary new.

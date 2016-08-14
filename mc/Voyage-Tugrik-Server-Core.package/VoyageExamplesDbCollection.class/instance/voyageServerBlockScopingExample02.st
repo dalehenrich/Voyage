@@ -5,7 +5,6 @@ voyageServerBlockScopingExample02
 pilotName := ''Janet_'', 100 atRandom asString.
 [
 	|  pilot |
-	(Smalltalk at: #System) abort.
 	pilot := VOTestPilot new
 		name: pilotName;
 		aux: 15;
@@ -14,7 +13,7 @@ pilotName := ''Janet_'', 100 atRandom asString.
 			yourself);
 		yourself.
 	pilot save.
-	(Smalltalk at: #System) commit.
+	VORepository current commit. "Commit needed to save preserve changes"
 
 	VORepository current
 		selectOne: VOTestPilot 

@@ -10,6 +10,9 @@ voyageServerBlockScopingExample01
 			name: ''Dale_'', id;
 			pet: (VOTestDog new name: ''Hadji_'', id ).
 		pilot save ].
+
+	VORepository current commit. "Commit needed to save preserve changes"
+
 	Transcript cr; show: ''last pilot '', pilot printString.
 
 	 VORepository current selectOne: VOTestPilot where: [ :each | each name = pilot name ] 
